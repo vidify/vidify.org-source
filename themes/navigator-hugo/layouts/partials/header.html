@@ -43,7 +43,7 @@
                             </li>
                             {{ else }}
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
+                                <a class="nav-link" href="{{ .URL | absLangURL }}" {{ if hasPrefix .URL "https://" }}target='_blank' rel="noreferrer"{{ end }}>{{ i18n .Name }}</a>
                             </li>
                             {{ end }}
                             {{ end }}

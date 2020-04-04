@@ -442,10 +442,22 @@ a:focus, a:hover {
 
 .single-page-header {
   background: #1f2532;
-  padding: 50px 0;
+  padding: 150px 0 50px 0;
   text-align: center;
   color: #fff;
   position: relative;
+}
+
+@media (max-width: 480px) {
+  .single-page-header {
+    padding: 100px 0 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .single-page-header {
+    padding: 110px 0 50px 0;
+  }
 }
 
 .single-page-header .breadcrumb {
@@ -466,6 +478,10 @@ a:focus, a:hover {
   background: #1f2532;
 }
 
+.drapeaux {
+  white-space: nowrap;
+}
+
 .navigation .navbar-nav > li.active a {
   color: #fff;
 }
@@ -476,6 +492,7 @@ a:focus, a:hover {
   line-height: 26px;
   padding: 20px 15px !important;
   transition: .2s ease-in-out 0s;
+  white-space: nowrap;
 }
 
 @media (max-width: 480px) {
@@ -572,7 +589,19 @@ a:focus, a:hover {
 
 @media (max-width: 480px) {
   .hero-area {
-    padding: 80px 0;
+    padding: 100px 0 60px 0;
+  }
+  .hero-area .block {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-area {
+    padding: 110px 0 60px 0;
+  }
+  .hero-area .block {
+    margin-top: 15px;
   }
 }
 

@@ -51,16 +51,16 @@ name    = "gettingstarted"
 url     = "wiki/gettingstarted/"
 weight  = 2
 [[menu.nav]]
-name    = "download"
-url     = "#pricing"
-weight  = 3
-[[menu.nav]]
 name    = "wiki"
 url     = "wiki"
-weight  = 4
+weight  = 3
 [[menu.nav]]
 name    = "blog"
 url     = "blog"
+weight  = 4
+[[menu.nav]]
+name    = "github"
+url     = "https://github.com/vidify"
 weight  = 5
 [[menu.nav]]
 name    = "contact"

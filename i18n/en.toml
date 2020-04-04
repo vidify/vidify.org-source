@@ -1,11 +1,11 @@
 [gettingstarted]
 other = "Getting Started"
-[download]
-other = "Download"
 [wiki]
 other = "Wiki"
 [blog]
 other = "Blog"
+[github]
+other = "GitHub"
 [contact]
 other = "Contact"
 
