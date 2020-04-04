@@ -4,6 +4,8 @@ topTitle: GET IT NOW
 title: Download
 subtitle: >
     Vidify's desktop app is completely open source. It's available for free to anyone. If you want to use it on your TV or phone, you'll need to subscribe on Google Play. Regardless, you can try out the demo without a cost.
+bottomText: >
+    Other more native installation methods can be found on [GitHub](https://github.com/vidify/vidify#installation).
 
 item:
   - name: BASIC

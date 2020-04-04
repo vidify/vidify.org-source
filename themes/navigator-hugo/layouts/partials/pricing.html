@@ -21,7 +21,8 @@
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <div class="pricing-item">
                     {{ "<!-- plan name & value -->" | safeHTML }}
-                    <div class="price-title bg-pricing">
+                    
+                    <div class="price-title" {{ with .background }} style="color: #fff; background: url('{{ . }}'); background-size: cover;" {{ end }}>
                         {{ with .name }}<h3>{{ . }}</h3>{{ end }}
                         {{ with .price }}<strong class="value">{{ . }}</strong>{{ end }}
                         {{ with .description }}<p>{{ . }}</p>{{ end }}
@@ -51,6 +52,9 @@
                 </a>
             </div>
             {{ end }}
+                <div class="title text-center">
+                    {{ with $pricing.bottomText }}<p>{{ . | markdownify }}</p>{{ end }}
+                </div>
         </div>
         <!-- End row -->
     </div>

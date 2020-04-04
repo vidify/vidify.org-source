@@ -440,11 +440,6 @@ a:focus, a:hover {
   padding-top: 30px;
 }
 
-.bg-pricing {
-  background: url("../images/pricing-bg.jpg");
-  background-size: cover;
-}
-
 .single-page-header {
   background: #1f2532;
   padding: 50px 0;
@@ -1041,14 +1036,14 @@ a:focus, a:hover {
 }
 
 .pricing-table .price-title > h3 {
-  color: #373737;
+  color: inherit;
   font-weight: 700;
   margin: 0 0 5px;
   font-size: 15px;
 }
 
 .pricing-table .price-title > p {
-  color: #373737;
+  color: inherit;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1058,6 +1053,7 @@ a:focus, a:hover {
 }
 
 .pricing-table .price-title .value {
+  color: inherit;
   font-size: 50px;
   padding: 10px 0;
 }
