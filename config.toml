@@ -13,7 +13,6 @@ enableGitInfo = false
 description = "Play music videos in real time anywhere"
 logo = "images/logo.png"
 dateFormat = "Jan _2, 2006"
-menufixed = true
 enableBlogImages = false
 
 # Multiple languages
@@ -46,6 +45,10 @@ dateFormat = "2 January 2006"
 # Site Menus
 [menu]
 # Navbar Menus
+[[menu.nav]]
+name    = "home"
+url     = "/"
+weight  = 1
 [[menu.nav]]
 name    = "gettingstarted"
 url     = "wiki/gettingstarted/"
