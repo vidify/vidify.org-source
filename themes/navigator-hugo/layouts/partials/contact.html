@@ -59,9 +59,12 @@
 
                     <div id="cf-submit">
                         <input type="submit" id="contact-submit" class="btn btn-transparent contact-btn" value="{{ $contact.emailButtonSend }}">
-                        <input type="submit" id="contact-sent" class="btn btn-transparent contact-btn" value="{{ $contact.emailButtonSent }}" disabled="true" style="display: none;">
                     </div>
                 </form>
+
+                {{ with $contact.helpText }}
+                <p id="contact-help" class="contact-help" style="display:none;">{{ . | markdownify }}</p>
+                {{ end }}
 
                 <a class="twitter-msg" href="https://twitter.com/GlowAppsMobile" target="_blank" rel="noreferrer">
                   <i class="tf-ion-social-twitter twitter-icon"></i>

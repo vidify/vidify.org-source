@@ -194,10 +194,8 @@
             + encodeURIComponent(message);
         window.open(uri, '_blank');
 
-        // Disable the submit button to avoid spamming and change the button
-        // text.
-        $('#contact-submit').hide();
-        $('#contact-sent').show();
+        // Show a message with help in case it didn't work.
+        $('#contact-help').show();
 	});
 })(jQuery);
 

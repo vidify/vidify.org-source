@@ -7,8 +7,8 @@ subtitle: "Having trouble or want to ask a question? Send us a mail or a message
 emailSubjectPlaceholder: "Subject"
 emailBodyPlaceholder: "Message"
 emailButtonSend: "SEND"
-emailButtonSent: "SENT"
 twitterMessageText: "Or send us a DM on Twitter"
+helpText: "Your email client didn't open? You might need to configure your browser. [Click here](https://www.makeuseof.com/tag/how-to-change-the-default-email-program-for-mailto-links/)."
 
 authorName: "Mario Ortiz Manero"
 authorImage: "images/author.jpg"
