@@ -62,7 +62,7 @@ a:focus, a:hover {
   padding: 10px 40px;
   text-transform: uppercase;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .btn-main:hover, .btn-main-sm:hover {
@@ -666,7 +666,7 @@ a:focus, a:hover {
   margin-left: 3px;
   height: 80px;
   width: 80px;
-  border-radius: 50px;
+  border-radius: 50%;
   transition: -webkit-transform 300ms ease;
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
