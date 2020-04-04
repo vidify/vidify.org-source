@@ -471,7 +471,7 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-nav > li > a {
-  color: #707d8f;
+  color: inherit;
   font-size: 18px;
   line-height: 26px;
   padding: 20px 15px !important;
@@ -548,7 +548,7 @@ a:focus, a:hover {
 
 .navbar-brand {
   height: auto;
-  padding: 8px 0;
+  padding: 0 15px 0 0;
 }
 
 .navbar-brand h1 {
@@ -1807,17 +1807,15 @@ a:focus, a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #fff;
-  color: #fff;
+  background: #222222;
+  color: #fff !important;
   transition: all 0.2s ease-out 0s;
-  padding: 15px 0;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #dedede;
   z-index: 10;
 }
 
 .top-bar.animated-header {
-  padding: 20px 0;
-  background: #fff;
+  background: #222222;
   box-shadow: none;
 }

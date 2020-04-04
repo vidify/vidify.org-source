@@ -1,9 +1,9 @@
-[about]
-other = "About"
-[service]
-other = "Service"
-[portfolio]
-other = "Portfolio"
+[gettingstarted]
+other = "Getting Started"
+[download]
+other = "Download"
+[wiki]
+other = "Wiki"
 [blog]
 other = "Blog"
 [contact]

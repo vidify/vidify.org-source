@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -49,9 +49,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.9480816"
-     inkscape:cx="440.94663"
-     inkscape:cy="78.516921"
+     inkscape:zoom="1.3775017"
+     inkscape:cx="441.96792"
+     inkscape:cy="90.625413"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -79,12 +79,12 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;"
-     x="279.32532"
+     x="287.31079"
      y="138.14062"
      id="text28"><tspan
        sodipodi:role="line"
        id="tspan26"
-       x="279.32532"
+       x="287.31079"
        y="138.14062"
-       style="font-size:160px;fill:#ffffff;">Vidify</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:146.66667175px;font-family:Inter;-inkscape-font-specification:'Inter Semi-Bold';fill:#ffffff;">Vidify</tspan></text>
 </svg>

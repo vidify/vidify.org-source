@@ -11,9 +11,9 @@ enableGitInfo = false
 # Site parameters
 [Params]
 description = "Play music videos in real time anywhere"
-logo = "images/logo.svg"
+logo = "images/logo.png"
 dateFormat = "Jan _2, 2006"
-menufixed = false
+menufixed = true
 enableBlogImages = false
 
 # Multiple languages
@@ -47,16 +47,16 @@ dateFormat = "2 January 2006"
 [menu]
 # Navbar Menus
 [[menu.nav]]
-name    = "about"
-url     = "about"
+name    = "gettingstarted"
+url     = "wiki/gettingstarted/"
 weight  = 2
 [[menu.nav]]
-name    = "service"
-url     = "service"
+name    = "download"
+url     = "#pricing"
 weight  = 3
 [[menu.nav]]
-name    = "portfolio"
-url     = "portfolio"
+name    = "wiki"
+url     = "wiki"
 weight  = 4
 [[menu.nav]]
 name    = "blog"
