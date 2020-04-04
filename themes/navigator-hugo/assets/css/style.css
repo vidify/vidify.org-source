@@ -11,6 +11,12 @@ p {
   font-size: 17px;
 }
 
+ol, ul {
+  font-family: "Titillium Web", sans-serif;
+  color: #646464;
+  font-size: 17px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 600;
@@ -23,12 +29,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .inline-block {
   display: inline-block;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 figure {
@@ -1011,6 +1011,12 @@ a:focus, a:hover {
   padding-bottom: 40px;
   text-align: center;
   background: #f9f9f9;
+}
+
+.pricing-table .pricing-item ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .pricing-btn {

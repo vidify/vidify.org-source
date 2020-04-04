@@ -7,7 +7,7 @@
         <div class="row">
             <!-- Blog cards are displayed within another partial
                  to avoid code duplication on the blogs directory -->
-            {{ range .Site.RegularPages }}
+            {{ range (.Paginator 6).Pages }}
                 {{ partial "blog-card" . }}
             {{ end }}
             <div class="col-12 text-center">

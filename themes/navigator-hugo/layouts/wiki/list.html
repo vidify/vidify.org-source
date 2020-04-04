@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ "<!-- Wiki Section Start -->" | safeHTML }}
+<section class="blog section" id="wiki">
+    <div class="container">
+        {{ .Content }}
+    </div>
+</section>
+{{ "<!-- Wiki Section End -->" | safeHTML }}
+
+{{ end }}
