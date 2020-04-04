@@ -2,7 +2,8 @@ enable: true
 
 topTitle: GET IT NOW
 title: Download
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+subtitle: >
+    Vidify's desktop app is completely open source. It's available for free to anyone. If you want to use it on your TV or phone, you'll need to subscribe on Google Play. Regardless, you can try out the demo without a cost.
 
 item:
   - name: BASIC
@@ -10,7 +11,7 @@ item:
     description: Perfect for entertainment purposes at home
     featurelist:
       - item: Play videos on the same computer
-      - item: Demo version for the TV & phone app
+      - item: Demo version for the external videos app
     btnText: Download
     btnURL: /download
 
@@ -19,6 +20,24 @@ item:
     description: Suitable for bars, clubs, home theaters...
     featurelist:
       - item: Play videos on the same computer
-      - item: Full access to the TV & phone app
+      - item: Full access to the external videos app
     btnText: Get it now
     btnURL: https://play.google.com/store/apps/details?id=com.glowapps.vidify
+
+download:
+  - name: WINDOWS
+    icon: tf-ion-social-windows
+    type: github
+    repo: vidify/vidify
+    match: win10
+
+  - name: LINUX
+    icon: tf-ion-social-tux
+    type: github
+    repo: vidify/vidify
+    match: linux
+
+  - name: ANDROID
+    icon: tf-ion-social-android
+    type: play_store
+    id: com.glowapps.vidify

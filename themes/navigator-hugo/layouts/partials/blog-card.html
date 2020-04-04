@@ -2,9 +2,11 @@
 {{ "<!-- single blog post -->" | safeHTML }}
 <article class="col-12 col-md-4">
     <div class="post-item">
+        {{ if .Site.Params.enableBlogImages }}
         <div class="post-thumb">
             <img class="img-fluid shadow rounded" src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" alt="Generic placeholder image">
         </div>
+        {{ end }}
         <div class="post-title">
             <h3 class="mt-0">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -23,7 +25,7 @@
             </ul>
         </div>
         <div class="post-content">
-            <p>{{ .Summary }}</p>
+            <p>{{ .Summary | chomp | truncate 200 }}</p>
         </div>
         <a class="btn btn-main" href="{{ .Permalink }}">Read more</a>
     </div>

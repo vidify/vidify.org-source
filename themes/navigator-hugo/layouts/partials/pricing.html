@@ -32,9 +32,23 @@
                         <li>{{.item}}</li>
                         {{ end }}
                     </ul>
-                    {{ "<!-- signup button -->" | safeHTML }}
-                    <a class="btn btn-main" href="{{.btnURL}}">{{.btnText}}</a>
                 </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="justify-content-center">
+            {{ "<!-- download buttons -->" | safeHTML }}
+            {{ range $pricing.download }}
+            <div class="pricing-btn">
+                {{ "<!-- Button data will be modified with JS dynamically -->" | safeHTML }}
+                {{ if eq .type "github" }}
+                <a class="btn btn-main download-btn" btn-type="{{ .type }}" github-repo="{{ .repo }}" github-match="{{ .match }}">
+                {{ else if eq .type "play_store" }}
+                <a class="btn btn-main download-btn" btn-type="{{ .type }}" play-store-id="{{ .id }}">
+                {{ end }}
+                    <i class="{{ .icon }}"></i>
+                    <span style="font-weight:600; text-transform:uppercase;">{{ .name }}</span>
+                </a>
             </div>
             {{ end }}
         </div>

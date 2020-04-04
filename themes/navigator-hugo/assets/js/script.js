@@ -23,6 +23,69 @@
 	}, 500);
 
 	/* ================================================================= */
+	/*	Download buttons
+	/* =================================================================  */
+    // Obtaining the version and link to the latest GitHub release with
+    // the official GitHub API. It has a limit of 60 requests/hour without
+    // authentication, so it's possible that this will fail.
+    function parseGithub(btn) {
+        const repo = btn.attr('github-repo');
+        const match = btn.attr('github-match');
+
+        let request = new XMLHttpRequest();
+        request.open('GET', 'https://api.github.com/repos/' + repo
+            + '/releases');
+        // If it fails, it just redirects to the GitHub releases page
+        request.onerror = () => btn.attr('href', 'https://github.com/'
+            + repo + '/releases');
+        // Otherwise, the version and href are properly set
+        request.onload = function() {
+            const data = JSON.parse(this.responseText);
+
+            // Iterating the releases
+            for (let i = 0; i < data.length; i++) {
+                // Iterating the assets
+                for (let j = 0; j < data[i].assets.length; j++) {
+                    const asset = data[i].assets[j];
+
+                    // If the name matches, the button data is updated.
+                    if (asset.name.includes(match)) {
+                        btn.attr('href', asset.browser_download_url);
+                        btn.append('<span class="download-btn-version">'
+                            + data[i].tag_name + '</span>');
+                        return;
+                    }
+                }
+            }
+        }
+        request.send();
+    }
+
+    // The Play Store doesn't have an official API so only the href can be
+    // set. It's left as a parser in case some API is released in the future
+    // to obtain the version name.
+    function parsePlayStore(btn) {
+        const id = btn.attr('play-store-id');
+        const url = 'https://play.google.com/store/apps/details?id=' + id
+        btn.attr('href', url);
+    }
+
+    $('.download-btn').each(function () {
+        const btn = $(this)
+        const type = btn.attr('btn-type');
+        switch (type) {
+            case "github":
+                parseGithub(btn);
+                break;
+            case "play_store":
+                parsePlayStore(btn);
+                break;
+            default:
+                break;
+        }
+    });
+
+	/* ================================================================= */
 	/*	Testimonial Carousel
 	/* =================================================================  */
 	// Init the slider

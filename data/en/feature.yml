@@ -1,17 +1,17 @@
 enable: true
 
 item:
-  - icon: tf-ion-ios-copy-outline
+  - icon: tf-profile-male
     title: Easy to use
     description: >
-      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+      All you have to do is open Vidify on a computer and, optionally, the app on your phone or television.
 
-  - icon: tf-ion-ios-alarm-outline
+  - icon: tf-mobile
     title: Cross platform
     description: >
-      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+      One of the most important parts is flexibility. You can reproduce the music videos on your phone, tablet, TV or computer with data from different players, like Spotify or VLC.
 
-  - icon: tf-ion-ios-book-outline
+  - icon: tf-tools-2
     title: Customizable
     description: >
-      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+      Although Vidify offers sane defaults, it's up to you if you want lyrics, dark mode, a different quality playback...

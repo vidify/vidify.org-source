@@ -1,5 +1,5 @@
 ########### CONFIG ###########
-baseURL = "http://vidify.org/"
+baseURL = "https://vidify.org/"
 languageCode = "en"
 title = "Vidify"
 theme = "navigator-hugo"
@@ -14,6 +14,7 @@ description = "Play music videos in real time anywhere"
 logo = "images/logo.svg"
 dateFormat = "Jan _2, 2006"
 menufixed = false
+enableBlogImages = false
 
 # Multiple languages
 defaultContentLanguageInSubdir = true

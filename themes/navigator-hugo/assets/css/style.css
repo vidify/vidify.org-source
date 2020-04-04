@@ -8,7 +8,7 @@ body {
 p {
   font-family: "Titillium Web", sans-serif;
   color: #646464;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -346,7 +346,7 @@ a:focus, a:hover {
 }
 
 .title p {
-  color: #848484;
+  color: #616161;
   width: 50%;
   margin: 0 auto;
 }
@@ -477,7 +477,7 @@ a:focus, a:hover {
 
 .navigation .navbar-nav > li > a {
   color: #707d8f;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 26px;
   padding: 20px 15px !important;
   transition: .2s ease-in-out 0s;
@@ -915,15 +915,6 @@ a:focus, a:hover {
   padding: 10px;
 }
 
-.map {
-  position: relative;
-}
-
-.map #map {
-  height: 400px;
-  color: white;
-}
-
 .contact-meta-block {
   margin-top: 30px;
   padding: 40px 0;
@@ -998,8 +989,32 @@ a:focus, a:hover {
   background: #f9f9f9;
 }
 
-.pricing-table .pricing-item a.btn-main, .pricing-table .pricing-item a.btn-main-sm {
+.pricing-btn {
+  margin-bottom: 15px;
+  border-radius: 3px;
+  padding-bottom: 10px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.pricing-btn .download-btn {
+  font-size: 19px;
+  width: 300px;
+  font-weight: 600;
+  color: #f9f9f9;
+}
+
+.download-btn .download-btn-name {
+  font-weight: 600;
   text-transform: uppercase;
+}
+
+.download-btn .download-btn-version {
+  font-weight: 300;
+  text-transform: none;
+}
+
+.pricing-table .pricing-item a.btn-main, .pricing-table .pricing-item a.btn-main-sm {
   margin-top: 20px;
 }
 
@@ -1030,7 +1045,6 @@ a:focus, a:hover {
   font-weight: 700;
   margin: 0 0 5px;
   font-size: 15px;
-  text-transform: uppercase;
 }
 
 .pricing-table .price-title > p {
@@ -1060,7 +1074,7 @@ a:focus, a:hover {
   font-weight: 500;
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0 10px;
   padding: 8px 5px;
   font-weight: 600;
@@ -1793,7 +1807,6 @@ a:focus, a:hover {
   font-size: 200px;
 }
 
-/*# sourceMappingURL=maps/style.css.map */
 .top-bar {
   position: fixed;
   top: 0;
