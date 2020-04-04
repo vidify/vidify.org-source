@@ -1,0 +1,17 @@
+enable: true
+
+item:
+  - icon: tf-ion-ios-copy-outline
+    title: Easy to use
+    description: >
+      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+
+  - icon: tf-ion-ios-alarm-outline
+    title: Cross platform
+    description: >
+      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.
+
+  - icon: tf-ion-ios-book-outline
+    title: Customizable
+    description: >
+      Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.

@@ -1,0 +1,23 @@
+{{ $blog := (index .Site.Data .Site.Language.Lang).blog }}
+{{ if $blog.enable }}
+{{ "<!-- Blog Section Start -->" | safeHTML }}
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-center">
+                    {{ with $blog.topTitle }}<h4>{{ . }}</h4>{{ end }}
+                    {{ with $blog.title }}<h2>{{ . }}</h2><span class="border"></span>{{ end }}
+                    {{ with $blog.subtitle }}<p>{{ . }}</p>{{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range first 3 .Site.RegularPages }}
+                {{ partial "blog-card" . }}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ "<!-- Blog Section End -->" | safeHTML }}
+{{ end }}

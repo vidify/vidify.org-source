@@ -1,0 +1,11 @@
+<!-- Language change menu -->
+{{ $icon_base_url := "images/lang/" }}
+{{ $icon_end_url := ".svg" }}
+{{ $icon_url := delimit (slice $icon_base_url .liste.code $icon_end_url) "" }}
+{{ if eq (string .liste.code) (string .site.Language) }}
+    <a href="{{ .liste.code | absURL }}" class="selected">
+    {{ else }}
+    <a href="{{ .liste.code | absURL }}">
+{{ end }}
+<img src="{{ $icon_url | absURL }}" alt="{{ .liste.code }} flag" draggable="false" width="20px"/>
+</a>

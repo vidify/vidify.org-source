@@ -1,0 +1,35 @@
+{{ $hero := (index .Site.Data .Site.Language.Lang).hero }}
+{{ if $hero.enable }}
+{{ "<!-- Hero Area -->" | safeHTML }}
+<section class="hero-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="video-player">
+                    <img class="img-fluid rounded" src="{{ with $hero.videoThumb }}{{.| absURL }}{{ end }}" alt="video-thumb">
+                    <a class="play-icon" href="javascript:void(0)">
+                        <i class="tf-ion-play" data-video="{{ with $hero.videoURL }}{{ . }}{{ end }}?autoplay=1"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="block">
+                    {{ with $hero.heading }}
+                        <h2>{{ . }}</h2>
+                    {{ end }}
+                    {{ with $hero.description }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                    {{ if $hero.button }}
+                        <ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
+                            <li data-scroll class="list-inline-item">
+                                <a href="{{ $hero.btnSkip }}" class="btn btn-main">{{ with $hero.btnText }}{{ . }}{{ end }}</a>
+                            </li>
+                        </ul>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

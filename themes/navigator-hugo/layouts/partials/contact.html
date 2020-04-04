@@ -1,0 +1,75 @@
+{{ $contact := (index .Site.Data .Site.Language.Lang).contact }}
+{{ if $contact.enable }}
+{{ "<!-- Start Contact Us -->" | safeHTML }}
+<section class="contact-us section bg-gray" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-center">
+                    {{ with $contact.topTitle }}<h4>{{ . }}</h4>{{ end }}
+                    {{ with $contact.title }}
+                    <h2>{{ . }}</h2>
+                    <span class="border"></span>
+                    {{ end }}
+                    {{ with $contact.subtitle }}<p>{{ . }}</p>{{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ "<!-- Contact Details -->" | safeHTML }}
+            <div class="col-12 col-md-6">
+                {{ "<!-- Developer info -->" | safeHTML }}
+                <div class="team-member text-center" style="padding: 0 80px;">
+                    <div class="member-photo">
+                        <img class="img-fluid" src="{{ $contact.authorImage | absURL }}" alt="team people">
+                    </div>
+                    <div class="member-content">
+                        <h3>{{ $contact.authorName }}</h3>
+                        <p>{{ $contact.authorDescription }}</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="{{ $contact.authorEmail }}" target='_blank'>
+                                    <i class="tf-ion-email"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="{{ $contact.authorGithub }}" target='_blank'>
+                                    <i class="tf-ion-social-github"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="{{ $contact.authorLinkedin }}" target='_blank'>
+                                    <i class="tf-ion-social-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{ "<!-- Contact Form -->" | safeHTML }}
+            <div class="contact-form col-12 col-md-6 ">
+                <form id="contact-form" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="{{ $contact.emailSubjectPlaceholder }}" class="form-control" name="subject" id="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="{{ $contact.emailBodyPlaceholder }}" class="form-control" name="message" id="message"></textarea>
+                    </div>
+
+                    <div id="cf-submit">
+                        <input type="submit" id="contact-submit" class="btn btn-transparent contact-btn" value="{{ $contact.emailButtonSend }}">
+                        <input type="submit" id="contact-sent" class="btn btn-transparent contact-btn" value="{{ $contact.emailButtonSent }}" disabled="true" style="display: none;">
+                    </div>
+                </form>
+
+                <a class="twitter-msg" href="https://twitter.com/GlowAppsMobile" target="_blank">
+                  <i class="tf-ion-social-twitter twitter-icon"></i>
+                  {{ $contact.twitterMessageText }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{{"<!-- Contact section End -->" | safeHTML}}
+{{ end }}

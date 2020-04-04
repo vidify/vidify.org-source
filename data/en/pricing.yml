@@ -1,0 +1,24 @@
+enable: true
+
+topTitle: GET IT NOW
+title: Download
+subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+
+item:
+  - name: BASIC
+    price: FREE
+    description: Perfect for entertainment purposes at home
+    featurelist:
+      - item: Play videos on the same computer
+      - item: Demo version for the TV & phone app
+    btnText: Download
+    btnURL: /download
+
+  - name: SUBSCRIPTION
+    price: 4.99€/mo
+    description: Suitable for bars, clubs, home theaters...
+    featurelist:
+      - item: Play videos on the same computer
+      - item: Full access to the TV & phone app
+    btnText: Get it now
+    btnURL: https://play.google.com/store/apps/details?id=com.glowapps.vidify

@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{ partial "page-title.html" . }}
+
+{{ "<!-- Blog Section Start -->" | safeHTML }}
+<section class="blog section" id="blog">
+    <div class="container">
+        <div class="row">
+            <!-- Blog cards are displayed within another partial
+                 to avoid code duplication on the blogs directory -->
+            {{ range .Site.RegularPages }}
+                {{ partial "blog-card" . }}
+            {{ end }}
+            <div class="col-12 text-center">
+                {{ template "_internal/pagination.html" . }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- Blog Section End -->" | safeHTML }}
+
+{{ end }}

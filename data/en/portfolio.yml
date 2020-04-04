@@ -1,0 +1,40 @@
+enable: true
+
+topTitle: HOW IT LOOKS LIKE
+title: Screenshots
+subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!
+
+filtermenu:
+  - name: Android TV
+    category: tv
+
+  - name: Android phone
+    category: mobile
+
+  - name: Desktop app
+    category: desktop
+
+item:
+  - title: The Android TV app
+    image: images/portfolio/tv01.jpg
+    category: tv
+
+  - title: Playing a music video
+    image: images/portfolio/mobile02.jpg
+    category: mobile
+
+  - title: Video playing on Desktop
+    image: images/portfolio/laptop01.jpg
+    category: desktop
+
+  - title: Android Phone app
+    image: images/portfolio/mobile01.jpg
+    category: mobile
+
+  - title: The setup screen on Desktop
+    image: images/portfolio/laptop02.jpg
+    category: desktop
+
+  - title: Playing a music video
+    image: images/portfolio/tv02.jpg
+    category: tv

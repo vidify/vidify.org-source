@@ -1,0 +1,99 @@
+########### CONFIG ###########
+baseURL = "http://vidify.org/"
+languageCode = "en"
+title = "Vidify"
+theme = "navigator-hugo"
+
+enableRobotsTXT = true
+googleAnalytics = "UA-162662877-1"
+enableGitInfo = false
+
+# Site parameters
+[Params]
+description = "Play music videos in real time anywhere"
+logo = "images/logo.svg"
+dateFormat = "Jan _2, 2006"
+menufixed = false
+
+# Multiple languages
+defaultContentLanguageInSubdir = true
+DefaultContentLanguage = "en"
+[[Params.langsList]]
+code = "es"
+[[Params.langsList]]
+code = "en"
+
+
+########### LANGUAGES ###########
+[Languages]
+[Languages.en]
+weight = 1
+languageCode = "en-us"
+title = "Vidify"
+dateFormat = "January 2, 2006"
+
+[Languages.es]
+weight = 2
+languageCode = "es-es"
+title = "Vidify"
+dateFormat = "2 January 2006"
+
+
+########### MENU ###########
+# The Themefisher font is used for the icons:
+# https://github.com/themefisher/themefisher-font
+# Site Menus
+[menu]
+# Navbar Menus
+[[menu.nav]]
+name    = "about"
+url     = "about"
+weight  = 2
+[[menu.nav]]
+name    = "service"
+url     = "service"
+weight  = 3
+[[menu.nav]]
+name    = "portfolio"
+url     = "portfolio"
+weight  = 4
+[[menu.nav]]
+name    = "blog"
+url     = "blog"
+weight  = 5
+[[menu.nav]]
+name    = "contact"
+url     = "contact"
+weight  = 6
+
+# Footer Service Menu
+[[menu.service]]
+name    = "graphicdesign"
+url     = "service"
+weight  = 1
+[[menu.service]]
+name    = "webdesign"
+url     = "service"
+weight  = 2
+[[menu.service]]
+name    = "webdevelopment"
+url     = "service"
+weight  = 3
+
+# Footer Quick links Menu
+[[menu.quicklink]]
+name    = "partners"
+url     = "about"
+weight  = 1
+[[menu.quicklink]]
+name    = "about"
+url     = "about"
+weight  = 2
+[[menu.quicklink]]
+name    = "faqs"
+url     = "about"
+weight  = 3
+[[menu.quicklink]]
+name    = "badges"
+url     = "about"
+weight  = 4

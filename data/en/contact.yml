@@ -1,0 +1,18 @@
+enable: true
+
+topTitle: "DROP US A NOTE"
+title: "Contact Us"
+subtitle: "Having trouble or want to ask a question? Send us a mail or a message on Twitter."
+
+emailSubjectPlaceholder: "Subject"
+emailBodyPlaceholder: "Message"
+emailButtonSend: "SEND"
+emailButtonSent: "SENT"
+twitterMessageText: "Or send us a DM on Twitter"
+
+authorName: "Mario Ortiz Manero"
+authorImage: "images/author.jpg"
+authorDescription: "Founder and main developer of the project. Feel free to contact me if you have any issues or questions."
+authorEmail: "mailto:marioortizmanero@gmail.com"
+authorGithub: "https://github.com/marioortizmanero"
+authorLinkedin: "https://www.linkedin.com/in/mario-ortiz-manero-3b0472186/"
