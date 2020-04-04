@@ -44,7 +44,7 @@
         <h5>Copyright 2018. All rights reserved.</h5>
         <h6>Design and Developed by themefisher.com
             <br>Get More
-            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Free Bootstrap Templates</a>
+            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank" rel="noreferrer">Free Bootstrap Templates</a>
         </h6>
     </div>
 </footer>
@@ -70,7 +70,10 @@
 <script src="{{ "plugins/filterzr/jquery.filterizr.min.js" | absURL }}"></script>
 
 {{ "<!-- Smooth Scroll js -->" | safeHTML }}
-<script src="{{ "plugins/smooth-scroll/dist/js/smooth-scroll.min.js" | absURL }}"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 
 {{ "<!-- fancybox -->" | safeHTML }}
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

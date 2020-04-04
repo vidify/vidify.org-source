@@ -28,17 +28,17 @@
                         <p>{{ $contact.authorDescription }}</p>
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <a href="{{ $contact.authorEmail }}" target='_blank'>
+                                <a href="{{ $contact.authorEmail }}" target='_blank' rel="noreferrer">
                                     <i class="tf-ion-email"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="{{ $contact.authorGithub }}" target='_blank'>
+                                <a href="{{ $contact.authorGithub }}" target='_blank' rel="noreferrer">
                                     <i class="tf-ion-social-github"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="{{ $contact.authorLinkedin }}" target='_blank'>
+                                <a href="{{ $contact.authorLinkedin }}" target='_blank' rel="noreferrer">
                                     <i class="tf-ion-social-linkedin"></i>
                                 </a>
                             </li>
@@ -63,7 +63,7 @@
                     </div>
                 </form>
 
-                <a class="twitter-msg" href="https://twitter.com/GlowAppsMobile" target="_blank">
+                <a class="twitter-msg" href="https://twitter.com/GlowAppsMobile" target="_blank" rel="noreferrer">
                   <i class="tf-ion-social-twitter twitter-icon"></i>
                   {{ $contact.twitterMessageText }}
                 </a>
