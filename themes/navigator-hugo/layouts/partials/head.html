@@ -13,6 +13,17 @@
 {{ "<!-- Favicon -->" | safeHTML }}
 <link rel="shortcut icon" type="image/x-icon" href="{{ `images/favicon.ico` | absURL }}" />
 
+{{ "<!-- Analytics -->" | safeHTML }}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162662877-1');
+</script>
+
 {{ "<!-- Stylesheets -->" | safeHTML }}
 {{ "<!-- Themefisher Icon font -->" | safeHTML }}
 <link rel="stylesheet" href="{{ `plugins/themefisher-font/style.css` | absURL }}">
