@@ -7,6 +7,10 @@
                 {{ with .Params.image }}
                 <img src="{{ . | absURL }}" class="w-100 mb-3" alt="Post-Image">
                 {{ end }}
+                <a href="{{ .Section | absURL }}">
+                    <i class="tf-ion-android-arrow-back"></i>
+                    <span>GO BACK</span>
+                </a>
                 <h2>{{ .Title }}</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
