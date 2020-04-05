@@ -35,12 +35,10 @@
                     <div class="portfolio-block">
                         <img class="img-fluid" src="{{ .thumb | absURL }}" alt="portfolio-image">
                         <div class="caption">
-                            <a class="search-icon" href="{{ .image | absURL }}" data-fancybox="image-1">
-                                <i class="tf-ion-ios-search-strong"></i>
+                            <a class="gallery-open" href="{{ .image | absURL }}" data-fancybox="image-1">
+                                <i class="tf-ion-ios-search-strong search-icon"></i>
+                                <h4>{{ .title }}</h4>
                             </a>
-                            <h4>
-                                <a href="">{{ .title }}</a>
-                            </h4>
                         </div>
                     </div>
                 </div>

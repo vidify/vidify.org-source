@@ -1208,7 +1208,7 @@ a:focus, a:hover {
   visibility: visible;
 }
 
-.portfolio-block:hover .caption .search-icon {
+.portfolio-block:hover .caption .gallery-open {
   opacity: 1;
   visibility: visible;
 }
@@ -1236,12 +1236,31 @@ a:focus, a:hover {
   background: #f0326b;
   color: #fff;
   display: inline-block;
-  padding: 4px 13px;
+  padding: 4px 8px;
   font-size: 25px;
-  border-radius: 30px;
+  border-radius: 50%;
+}
+
+.portfolio-block .caption .gallery-open {
+  color: #fff;
+  display: inline-block;
+  font-size: 25px;
   opacity: 0;
   visibility: hidden;
+  margin: 0 6px;
 }
+
+/* The search icon is hidden for mobiles because they don't fit */
+@media (max-width: 480px) {
+  .portfolio-block .caption .search-icon {
+    display: none;
+  }
+
+  .portfolio-block .caption h4 {
+    font-size: 16px;
+  }
+}
+
 
 /*=================================================================
   Services section
