@@ -9,16 +9,14 @@ other = "GitHub"
 [contact]
 other = "Contact"
 
-[graphicdesign]
-other = "Graphic Design"
-[webdesign]
-other = "Web Design"
-[webdevelopment]
-other = "Web Development"
+[vidify]
+other = "Vidify"
+[audiosync]
+other = "Audiosync"
+[vidifyorg]
+other = "vidify.org"
 
-[partners]
-other = "Partners"
+[gettingstarted]
+other = "Getting Started"
 [faqs]
 other = "FAQ's"
-[badges]
-other = "Badges"

@@ -67,33 +67,25 @@ url     = "contact"
 weight  = 5
 
 # Footer Service Menu
-[[menu.service]]
-name    = "graphicdesign"
-url     = "service"
+[[menu.github]]
+name    = "vidify"
+url     = "https://github.com/vidify/vidify"
 weight  = 1
-[[menu.service]]
-name    = "webdesign"
-url     = "service"
+[[menu.github]]
+name    = "audiosync"
+url     = "https://github.com/vidify/audiosync"
 weight  = 2
-[[menu.service]]
-name    = "webdevelopment"
-url     = "service"
+[[menu.github]]
+name    = "vidifyorg"
+url     = "https://github.com/vidify/vidify.org"
 weight  = 3
 
 # Footer Quick links Menu
 [[menu.quicklink]]
-name    = "partners"
-url     = "about"
+name    = "gettingstarted"
+url     = "/wiki/#wiki"
 weight  = 1
 [[menu.quicklink]]
-name    = "about"
-url     = "about"
-weight  = 2
-[[menu.quicklink]]
 name    = "faqs"
-url     = "about"
-weight  = 3
-[[menu.quicklink]]
-name    = "badges"
-url     = "about"
-weight  = 4
+url     = "/wiki/faq/"
+weight  = 2

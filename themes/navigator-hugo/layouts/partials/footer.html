@@ -6,12 +6,12 @@
             <div class="row">
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <h3>{{ $footer.aboutTitle }}</h3>
-                    {{ with $footer.description }}<p>{{ . }}</p>{{ end }}
+                    {{ with $footer.description }}<p>{{ . | markdownify }}</p>{{ end }}
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>{{ $footer.serviceTitle }}</h3>
+                    <h3>{{ $footer.githubTitle }}</h3>
                     <ul>
-                        {{ range .Site.Menus.service }}
+                        {{ range .Site.Menus.github }}
                         <li>
                             <a href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
                         </li>
