@@ -3,9 +3,9 @@
 <div class="pricing-btn">
     {{ "<!-- Button data will be modified with JS dynamically -->" | safeHTML }}
     {{ if eq .type "github" }}
-    <a class="btn btn-main download-btn" target='_blank' rel='noreferrer' btn-type="{{ .type }}" github-repo="{{ .repo }}" github-match="{{ .match }}">
+    <a class="btn btn-main download-btn" href="https://github.com/{{ .repo }}/releases" target='_blank' rel='noreferrer' btn-type="{{ .type }}" github-repo="{{ .repo }}" github-match="{{ .match }}">
     {{ else if eq .type "play_store" }}
-    <a class="btn btn-main download-btn" target='_blank' rel='noreferrer' btn-type="{{ .type }}" play-store-id="{{ .id }}">
+    <a class="btn btn-main download-btn" href="https://play.google.com/store/apps/details?id={{ .id }}" target='_blank' rel='noreferrer' btn-type="{{ .type }}" play-store-id="{{ .id }}">
     {{ end }}
         <i class="{{ .icon }}"></i>
         <span style="font-weight:600; text-transform:uppercase;">{{ .name }}</span>

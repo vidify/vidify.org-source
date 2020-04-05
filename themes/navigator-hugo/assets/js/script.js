@@ -6,7 +6,7 @@
 	/* =================================================================  */
 	$('.play-icon i').click(function () {
 		var video = '<iframe allowfullscreen src="'
-            + $(this).attr('data-video') + '"></iframe>';
+            + $(this).attr('data-video') + '?autoplay=1"></iframe>';
 		$(this).replaceWith(video);
 	});
 
@@ -35,10 +35,7 @@
         let request = new XMLHttpRequest();
         request.open('GET', 'https://api.github.com/repos/' + repo
             + '/releases');
-        // If it fails, it just redirects to the GitHub releases page
-        request.onerror = () => btn.attr('href', 'https://github.com/'
-            + repo + '/releases');
-        // Otherwise, the version and href are properly set
+        // If the request doesn't fail, the version and href are properly set
         request.onload = function() {
             const data = JSON.parse(this.responseText);
 
@@ -61,13 +58,10 @@
         request.send();
     }
 
-    // The Play Store doesn't have an official API so only the href can be
-    // set. It's left as a parser in case some API is released in the future
-    // to obtain the version name.
+    // The Play Store doesn't have an official API so nothing can be done
+    // to obtain the version safely. It's left here in case some API is
+    // released in the future to obtain the version name.
     function parsePlayStore(btn) {
-        const id = btn.attr('play-store-id');
-        const url = 'https://play.google.com/store/apps/details?id=' + id
-        btn.attr('href', url);
     }
 
     $('.download-btn').each(function () {
