@@ -22,6 +22,38 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+.container h1 {
+  padding-top: 20px;
+}
+
+.container h2 {
+  padding-top: 15px;
+}
+
+.container h3 {
+  padding-top: 15px;
+}
+
+.container h4 {
+  padding-top: 10px;
+}
+
+.container table {
+  width: 100%;
+}
+
+.container th, td {
+  border-color: #aaa;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 3px;
+  padding: 6px;
+}
+
+.container img {
+  max-width: 100%;
+}
+
 /*=== MEDIA QUERY ===*/
 .no-padding {
   padding: 0 !important;
@@ -389,6 +421,11 @@ a:focus, a:hover {
   background-image: linear-gradient(100deg, #f9643d, #fe2a77);
 }
 
+/* Adding a dotted underline to Bootcamp's tooltip style */
+.tooltip-text-custom {
+  border-bottom: 1px dotted black;
+}
+
 .header-bradcrumb {
   background: transparent;
 }
@@ -487,7 +524,7 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-nav > li > a {
-  color: inherit;
+  color: #fff;
   font-size: 18px;
   line-height: 26px;
   padding: 20px 15px !important;
@@ -1560,9 +1597,15 @@ a:focus, a:hover {
   color: #000;
 }
 
-.post-item .post-meta {
-  font-size: 14px;
-  color: #888;
+.post-meta {
+  font-size: 12px !important;
+  color: #646464 !important;
+}
+
+.post-meta span {
+  font-style: italic;
+  font-size: 15px !important;
+  color: #646464 !important;
 }
 
 .post-item .post-meta a {
@@ -1852,7 +1895,6 @@ a:focus, a:hover {
   top: 0;
   width: 100%;
   background: #222222;
-  color: #fff !important;
   transition: all 0.2s ease-out 0s;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #dedede;

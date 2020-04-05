@@ -16,9 +16,7 @@
             <ul class="list-inline">
                 <li class="list-inline-item">
                     <span>By</span>
-                    {{ .Params.author }}
-                </li>
-                <li class="list-inline-item">
+                    <span>{{ .Params.author }}</span>
                     <span>at</span>
                     <span>{{ .Date.Format .Site.Params.dateFormat }}</span>
                 </li>

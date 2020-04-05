@@ -6,6 +6,24 @@
 <section class="blog section" id="wiki">
     <div class="container">
         {{ .Content }}
+        {{ if (len .Pages) ne 0 }}
+        <hr>
+        <h1>More</h1>
+        <span>You can read other articles on the Wiki:</span>
+        <ul>
+            {{ range where .Pages "Params.type" "!=" "developer" }}
+            <li><a href="{{ .URL | absURL }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+        <hr>
+        <h1>Developer</h1>
+        <span>Advanced articles intended for developers:</span>
+        <ul>
+            {{ range where .Pages "Params.type" "developer" }}
+            <li><a href="{{ .URL | absURL }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+        {{ end }}
     </div>
 </section>
 {{ "<!-- Wiki Section End -->" | safeHTML }}

@@ -39,22 +39,10 @@
         </div>
         <div class="justify-content-center">
             {{ "<!-- download buttons -->" | safeHTML }}
-            {{ range $pricing.download }}
-            <div class="pricing-btn">
-                {{ "<!-- Button data will be modified with JS dynamically -->" | safeHTML }}
-                {{ if eq .type "github" }}
-                <a class="btn btn-main download-btn" target='_blank' rel='noreferrer' btn-type="{{ .type }}" github-repo="{{ .repo }}" github-match="{{ .match }}">
-                {{ else if eq .type "play_store" }}
-                <a class="btn btn-main download-btn" target='_blank' rel='noreferrer' btn-type="{{ .type }}" play-store-id="{{ .id }}">
-                {{ end }}
-                    <i class="{{ .icon }}"></i>
-                    <span style="font-weight:600; text-transform:uppercase;">{{ .name }}</span>
-                </a>
+            {{ partial "download-buttons" . }}
+            <div class="text-center">
+                {{ with $pricing.bottomText }}<p>{{ . | markdownify }}</p>{{ end }}
             </div>
-            {{ end }}
-                <div class="title text-center">
-                    {{ with $pricing.bottomText }}<p>{{ . | markdownify }}</p>{{ end }}
-                </div>
         </div>
         <!-- End row -->
     </div>

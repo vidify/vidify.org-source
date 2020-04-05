@@ -1,7 +1,8 @@
 ---
 title: "Website Launch"
+description: "Introductory article on Vidify's blog"
+author: "Mario Ortiz Manero"
 date: 2020-04-02T01:49:12+02:00
-draft: false
 ---
 
 I'm officially releasing Vidify's website!
