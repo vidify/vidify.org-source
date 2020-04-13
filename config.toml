@@ -10,7 +10,6 @@ enableGitInfo = false
 
 # Site parameters
 [Params]
-description = "Play music videos in real time anywhere"
 logo = "images/logo.png"
 dateFormat = "Jan _2, 2006"
 enableBlogImages = false
@@ -35,18 +34,24 @@ name = "Nederlands"
 weight = 1
 languageCode = "en-us"
 title = "Vidify"
+description = "Play live music videos anywhere."
+tags = "music videos, broadcast, live, real time, spotify, android, TV, windows, linux, mac os, television"
 dateFormat = "January 2, 2006"
 
 [Languages.es]
 weight = 2
 languageCode = "es-es"
 title = "Vidify"
+description = "Reproduce videoclips en directo y en cualquier sitio."
+tags = "videoclips, en directo, broadcast, real time, spotify, android, TV, windows, linux, mac os, videos, television"
 dateFormat = "2 January 2006"
 
 [Languages.nl]
 weight = 3
 languageCode = "nl-nl"
 title = "Vidify"
+description = "Play music videos in real time anywhere."
+tags = "music videos, broadcast, live, real time, spotify, android, TV, windows, linux, mac os, television"
 dateFormat = "2 January 2006"
 
 
