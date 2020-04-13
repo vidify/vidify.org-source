@@ -7,12 +7,6 @@
                     <a class="navbar-brand" href="{{ .Site.BaseURL }}">
                         <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" width="150px">
                     </a>
-                    <!-- Language icons -->
-                    <div id="drapeaux">
-                        {{ range .Site.Params.langsList }}
-                            {{ partial "flags.html" (dict "site" $.Site "liste" .) }}
-                        {{ end }}
-                    </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
                         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="tf-ion-android-menu"></span>
@@ -42,6 +36,18 @@
                             </li>
                             {{ end }}
                             {{ end }}
+                            <!-- Language dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Language
+                                </a>
+                                <div class="dropdown-menu">
+                                    {{ range sort .Site.Params.langsList "code" "asc" }}
+                                        {{ partial "language-item.html" (dict "site" $.Site "list" .) }}
+                                    {{ end }}
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </nav>
