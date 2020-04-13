@@ -1,13 +1,12 @@
 ---
 title: "FAQ"
-description: "Frequently Asked Questions"
+description: "Frequently Asked Questions (Preguntas Más Frecuentes)"
 author: "Mario Ortiz Manero"
 date: 2020-04-05
 ---
 
-### My favorite music player isn't supported by Vidify
-Vidify was created with this in mind. There are many different music players and we are working on supporting as many of them as possible. Please do [let us know](https://github.com/vidify/vidify/issues/new) so that we know what players are more popular.
+### Mi reproductor de música favorito no es soportado por Vidify
+Vidify fue creado con esto en mente. Hay muchos diferentes reproductores de música y estamos trabajando en soportar el mayor número posible. Por favor [repórtalo](https://github.com/vidify/vidify/issues/new) para que podamos saber cuáles son los más populares.
 
-### Vidify doesn't recognize some downloaded songs
-If the song doesn't have a metadata field with its title and artist (the latter is optional), Vidify is unable to know what song is playing. Try to modify the metadata of your downloaded songs with VLC or any other tool.
-
+### Vidify no reconoce algunas canciones descargadas
+Si la canción que descargaste no tiene *metadatos* con el título y artista (este último es opcional), Vidify no es capaz de saber qué canción se está reproduciendo. Intenta modificar los metadatos de las canciones descargadas con VLC o cualquier otra herramienta.
