@@ -1,0 +1,8 @@
+enable: true
+
+heading: "Play live music videos anywhere"
+description: "With Vidify, you can easily broadcast music videos of what's playing on your computer."
+button: true
+btnText: "Learn More"
+videoThumb: "images/slider/video-player-thumb.jpg"
+videoURL: "https://www.youtube.com/embed/ddvQKNL1FjI"

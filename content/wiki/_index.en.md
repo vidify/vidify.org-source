@@ -25,7 +25,7 @@ An API is simply a source of information about the music playing on a device. Fo
 | Name                                                          | Extra requirements                    | Description |
 |---------------------------------------------------------------|---------------------------------------|-------------|
 | [Linux Media Players](/wiki/linux-media-players)              | *Installed by default* (see the wiki) | Any MPRIS compatible media player for Linux or BSD (99% of them, like Spotify, Clementine, VLC...). |
-| [Spotify for Windows & MacOS](/spotify-for-windows-and-macos) | *Installed by default*                | The Spotify desktop app for Windows & MacOS, using the [SwSpotify](https://github.com/SwagLyrics/SwSpotify) library. |
+| [Spotify for Windows & MacOS](/wiki/spotify-for-windows-and-macos) | *Installed by default*                | The Spotify desktop app for Windows & MacOS, using the [SwSpotify](https://github.com/SwagLyrics/SwSpotify) library. |
 | [Spotify Web](/wiki/spotify-web-api)                          | *Installed by default*                | The official Spotify Web API, using [Tekore](https://github.com/felix-hilden/tekore). Check the wiki for more details on how to set it up. |
 
 ### The players

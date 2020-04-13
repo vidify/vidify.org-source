@@ -1,0 +1,17 @@
+enable: true
+
+item:
+  - icon: tf-profile-male
+    title: Easy to use
+    description: >
+      No need to follow complicated set-ups. Just open Vidify and start playing music!
+
+  - icon: tf-mobile
+    title: Flexible
+    description: >
+      You can reproduce the music videos on your phone, tablet, TV or computer with data from different music players, like Spotify or VLC.
+
+  - icon: tf-tools-2
+    title: Customizable
+    description: >
+      Although Vidify offers sane defaults, it's up to you if you want lyrics, dark mode, a different quality playback...
