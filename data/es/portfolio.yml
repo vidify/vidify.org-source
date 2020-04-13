@@ -1,0 +1,46 @@
+enable: true
+
+topTitle: CÓMO ES
+title: Capturas de pantalla
+subtitle: Ve por tí mismo cómo es Vidify en sus diferentes plataformas.
+
+filtermenu:
+  - name: Televisión
+    category: tv
+
+  - name: Móvil
+    category: mobile
+
+  - name: Ordenador
+    category: desktop
+
+item:
+  - title: La app de televisión para Android
+    image: images/portfolio/tv01.png
+    thumb: images/portfolio/tv01-thumb.png
+    category: tv
+
+  - title: Reproduciendo un videoclip
+    image: images/portfolio/mobile01.png
+    thumb: images/portfolio/mobile01-thumb.png
+    category: mobile
+
+  - title: Videoclip en el Escritorio
+    image: images/portfolio/laptop01.png
+    thumb: images/portfolio/laptop01-thumb.png
+    category: desktop
+
+  - title: Aplicación móvil para Android
+    image: images/portfolio/mobile02.png
+    thumb: images/portfolio/mobile02-thumb.png
+    category: mobile
+
+  - title: La pantalla principal en Escritorio
+    image: images/portfolio/laptop02.png
+    thumb: images/portfolio/laptop02-thumb.png
+    category: desktop
+
+  - title: Reproduciendo un videoclip
+    image: images/portfolio/tv02.png
+    thumb: images/portfolio/tv02-thumb.png
+    category: tv

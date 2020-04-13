@@ -1,0 +1,8 @@
+enable: true
+
+heading: "Reproduce videoclips en directo donde quieras"
+description: "Con Vidify, puedes emitir fácilmente videoclips de la música que se está reproduciendo en tu ordenador."
+button: true
+btnText: "Aprende más"
+videoThumb: "images/slider/video-player-thumb.jpg"
+videoURL: "https://www.youtube.com/embed/ddvQKNL1FjI"

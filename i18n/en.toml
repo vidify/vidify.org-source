@@ -9,6 +9,9 @@ other = "GitHub"
 [contact]
 other = "Contact"
 
+[language]
+other = "Language"
+
 [vidify]
 other = "Vidify"
 [audiosync]

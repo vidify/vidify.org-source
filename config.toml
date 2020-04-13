@@ -76,6 +76,8 @@ weight  = 4
 name    = "contact"
 url     = "contact"
 weight  = 5
+[[menu.language]]
+name = "language"
 
 # Footer Service Menu
 [[menu.github]]

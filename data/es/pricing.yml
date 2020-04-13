@@ -1,0 +1,41 @@
+enable: true
+
+topTitle: CONSÍGUELO AHORA
+title: Descargar
+subtitle: >
+    La aplicación de escritorio de Vidify es completamente de código abierto. Está disponible para cualquiera de forma gratuita. Si quieres usarla en tu televisión o móvil, tendrás que suscribirte en Google Play. De todos modos, puedes probar la demo sin ningún coste.
+bottomText: >
+    Échale un ojo a [la sección de Introducción](/wiki) para aprender cómo instalarlo y usarlo.
+
+item:
+  - name: BÁSICO
+    price: GRATIS
+    description: Perfecto para entretenimiento en tu casa
+    featurelist:
+      - item: Reproduce vídeos en el mismo ordenador
+      - item: Versión demo para la app de videoclips externa
+
+  - name: SUBSCRIPCIÓN
+    price: 4.99€/mes
+    description: Adecuada para bares, pubs, cines en casa...
+    featurelist:
+      - item: Reproduce vídeos en el mismo ordenador
+      - item: Acceso completo a la app de videoclips externa
+
+download:
+  - name: WINDOWS
+    icon: tf-ion-social-windows
+    type: github
+    repo: vidify/vidify
+    match: win10
+
+  - name: LINUX
+    icon: tf-ion-social-tux
+    type: github
+    repo: vidify/vidify
+    match: linux
+
+  - name: ANDROID
+    icon: tf-ion-social-android
+    type: play_store
+    id: com.glowapps.vidify
