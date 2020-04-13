@@ -1,0 +1,9 @@
+<!-- Language change menu -->
+{{ if eq (string .list.code) (string .site.Language) }}
+    <a href="{{ .list.code | absURL }}" class="selected dropdown-item">
+    {{ else }}
+    <a href="{{ .list.code | absURL }}" class="dropdown-item">
+{{ end }}
+<span class="lang-code">{{ .list.code }}</span>
+<span class="lang-name">{{ .list.name }}</span>
+</a>

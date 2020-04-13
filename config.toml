@@ -20,8 +20,13 @@ defaultContentLanguageInSubdir = true
 DefaultContentLanguage = "en"
 [[Params.langsList]]
 code = "es"
+name = "Español"
 [[Params.langsList]]
 code = "en"
+name = "English"
+[[Params.langsList]]
+code = "nl"
+name = "Nederlands"
 
 
 ########### LANGUAGES ###########
@@ -35,6 +40,12 @@ dateFormat = "January 2, 2006"
 [Languages.es]
 weight = 2
 languageCode = "es-es"
+title = "Vidify"
+dateFormat = "2 January 2006"
+
+[Languages.nl]
+weight = 3
+languageCode = "nl-nl"
 title = "Vidify"
 dateFormat = "2 January 2006"
 
