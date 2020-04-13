@@ -1,6 +1,6 @@
 <!-- Language change menu -->
 {{ if eq (string .list.code) (string .site.Language) }}
-    <a href="{{ .list.code | absURL }}" class="selected dropdown-item">
+    <a href="{{ .list.code | absURL }}" class="dropdown-item selected">
     {{ else }}
     <a href="{{ .list.code | absURL }}" class="dropdown-item">
 {{ end }}

@@ -477,10 +477,6 @@ a:focus, a:hover {
   padding-top: 30px;
 }
 
-.dropdown-menu .selected {
-  font-style: italic;
-}
-
 .lang-code {
   opacity: 0.5;
   text-transform: uppercase;
@@ -596,6 +592,7 @@ a:focus, a:hover {
   background-color: #000;
   display: block;
   opacity: 0;
+  position: absolute !important;
   transition: opacity 0.3s ease-in-out,-webkit-transform 0.3s;
   transition: transform 0.3s,opacity 0.3s ease-in-out;
   transition: transform 0.3s,opacity 0.3s ease-in-out,-webkit-transform 0.3s;
@@ -608,6 +605,10 @@ a:focus, a:hover {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   opacity: 1;
+}
+
+.dropdown-menu .selected {
+  font-style: italic;
 }
 
 .navbar-brand {
