@@ -1,0 +1,18 @@
+enable: true
+
+topTitle: "DÉJANOS UNA NOTA"
+title: "Contáctanos"
+subtitle: "¿Tienes problemas o quieres preguntarlos algo? Mándanos un correo o un mensaje en Twitter."
+
+emailSubjectPlaceholder: "Asunto"
+emailBodyPlaceholder: "Mensaje"
+emailButtonSend: "ENVIAR"
+twitterMessageText: "O mándanos un MD en Twitter"
+helpText: "¿No se abrió tu cliente de correo? Es posible que necesites configurar tu navegador. [Haz click aquí](https://www.cristianmonroy.com/2016/03/abre-los-enlaces-mailto-de-internet-en-tu-cliente-de-correo-preferido-cuando-usas-chrome-o-firefox.html)."
+
+authorName: "Mario Ortiz Manero"
+authorImage: "images/author.jpg"
+authorDescription: "Fundador y desarrollador principal del proyecto."
+authorEmail: "mailto:marioortizmanero@gmail.com"
+authorGithub: "https://github.com/marioortizmanero"
+authorLinkedin: "https://www.linkedin.com/in/mario-ortiz-manero-3b0472186/"

@@ -14,8 +14,6 @@ item:
     featurelist:
       - item: Play videos on the same computer
       - item: Demo version for the external videos app
-    btnText: Download
-    btnURL: /download
 
   - name: SUBSCRIPTION
     price: 4.99€/mo
@@ -23,8 +21,6 @@ item:
     featurelist:
       - item: Play videos on the same computer
       - item: Full access to the external videos app
-    btnText: Get it now
-    btnURL: https://play.google.com/store/apps/details?id=com.glowapps.vidify
 
 download:
   - name: WINDOWS

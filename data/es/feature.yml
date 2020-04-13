@@ -1,0 +1,17 @@
+enable: true
+
+item:
+  - icon: tf-profile-male
+    title: Fácil de usar
+    description: >
+      No es necesario seguir instrucciones complicadas. Simplemente abre Vidify, ¡y empieza a reproducir música!
+
+  - icon: tf-mobile
+    title: Flexible
+    description: >
+      Puedes reproducir los videoclips en tu móvil, tablet, televisión u ordenador con información de diferentes reproductores de música, como Spotify o VLC.
+
+  - icon: tf-tools-2
+    title: Personalizable
+    description: >
+      Aunque Vidify ofrece una configuración por defecto razonables, tú eliges si quieres letras, modo noche, una calidad diferente de reproducción...

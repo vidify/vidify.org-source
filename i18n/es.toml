@@ -1,24 +1,25 @@
-[about]
-other = "About"
-[service]
-other = "Service"
-[portfolio]
-other = "Portfolio"
+[home]
+other = "Inicio"
+[wiki]
+other = "Wiki"
 [blog]
 other = "Blog"
+[github]
+other = "GitHub"
 [contact]
-other = "Contact"
+other = "Contacto"
 
-[graphicdesign]
-other = "Graphic Design"
-[webdesign]
-other = "Web Design"
-[webdevelopment]
-other = "Web Development"
+[language]
+other = "Idioma"
+
+[vidify]
+other = "Vidify"
+[audiosync]
+other = "Audiosync"
+[vidifyorg]
+other = "vidify.org"
 
 [gettingstarted]
-other = "Getting Started"
+other = "Introdución"
 [faqs]
 other = "FAQ's"
-[badges]
-other = "Méritos"

@@ -1,0 +1,14 @@
+enable: true
+
+item:
+  - positionRight: false
+    image: images/about/about-1.jpg
+    title: "La atmósfera perfecta"
+    description: >
+        Vidify es ideal para reproducir el contenido apropiado en tus dispositivos. Está diseñado especialmente para bares, pubs, y cines en casa. Los videoclips son indudablemente entretenidos; ayudan a la gente a entender mejor la música y a disfrutar más.
+
+  - positionRight: true
+    image: images/about/about-2.jpg
+    title: Completamente automático
+    description: >
+        Vidify reproduce los videoclips automáticamente, dependiendo de qué música se está escuchando en un ordenador. Puedes seguir haciendo tus cosas, nosotros nos encargamos de los vídeos.
