@@ -8,7 +8,7 @@ Any contribution is welcome! If you want to help translate the site to more lang
 * Create an entry in `config.toml` inside `[[Params.langsList]]` and `[Languages]`.
 * Translate the menus in `i18n/LANG.toml`.
 * Translate the site content in `data/LANG/*.yaml`.
-* Translate sections at `content/blog`, `content/contact`, `content/wiki`...
+* Translate sections at `content/blog/*.LANG.md`, `content/contact/*.LANG.md`, `content/wiki/*.LANG.md`...
 
 ## Building
 You can build the website with `hugo`. All the static files will be saved into the `public/` directory. If you want to use live-reload, you can use `hugo server -D` and open [http://localhost:1313/](http://localhost:1313/).
