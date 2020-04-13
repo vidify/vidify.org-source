@@ -4,31 +4,31 @@ description: "Los artículos de la wiki para aprender más sobre Vidify"
 author: "Mario Ortiz Manero"
 ---
 
-# Getting Started
+# Introducción
 
-To use Vidify, you're always going to need the desktop app installed on the computer where the music is playing. The easiest way to install it is by downloading the binaries. The app is only optional, since it connects to Vidify through the network.
+Para usar Vidify, siempre vas a necesitar la app de escritorio instalada donde la música está siendo reproducida. La manera más fácil de instalarla es descargando los binarios. Desde ahí puedes reproducir videoclips, pero si quieres hacerlo en una TV o móvil necesitarás la aplicación para Android instalada, que se comunica a través de tu red.
 
-Vidify currently supports Spotify on Windows and Mac OS, and {{< tooltip "almost all" "all MPRIS compatible" >}} music players on Linux.
+Vidify actualmente soporta Spotify para Windows y Mac OS, y {{< tooltip "casi todos" "todos los compatibles con MPRIS" >}} los reproductores de música de Linux.
 
 {{< partial "download-buttons.html" >}}
 
-If you're more tech savvy, it's better to download Vidify from [PyPi](https://pypi.org/project/vidify) with `pip install vidify`, and Linux users can use other native alternatives:
-* Any distro: [snapcraft](https://snapcraft.io/vidify-qt).
+Si sabes más sobre ordenadores, será mejor descargar Vidify desde [PyPi](https://pypi.org/project/vidify). Los usuarios de Linux tienen otras alternativas disponibles más nativas:
+
 * Arch Linux: [AUR](https://aur.archlinux.org/packages/vidify/).
 * Gentoo Linux: [GURU media-video/vidify](https://gpo.zugaina.org/media-video/vidify).
 
-More details about advanced intallations can be found on [GitHub](https://github.com/vidify/vidify#installation) (the README contains detailed information for more advanced users).
+Más detalles sobre las instalaciones avanzadas pueden encontrarse en [GitHub](https://github.com/vidify/vidify#installation) (el README contiene información detallada para usuarios más experimentados).
 
-### The APIs
-An API is simply a source of information about the music playing on a device. For example, the Spotify desktop client, or iTunes. Here are the currently supported ones:
+### Las APIs
+Una API simplemente es una fuente de información de la música reproducida en un dispositivo. Por ejemplo, la aplicación de Spotify de escritorio, o iTunes. Aquí están las soportadas actualmente:
 
-| Name                                                          | Extra requirements                    | Description |
-|---------------------------------------------------------------|---------------------------------------|-------------|
-| [Linux Media Players](/wiki/linux-media-players)              | *Installed by default* (see the wiki) | Any MPRIS compatible media player for Linux or BSD (99% of them, like Spotify, Clementine, VLC...). |
-| [Spotify for Windows & MacOS](/spotify-for-windows-and-macos) | *Installed by default*                | The Spotify desktop app for Windows & MacOS, using the [SwSpotify](https://github.com/SwagLyrics/SwSpotify) library. |
-| [Spotify Web](/wiki/spotify-web-api)                          | *Installed by default*                | The official Spotify Web API, using [Tekore](https://github.com/felix-hilden/tekore). Check the wiki for more details on how to set it up. |
+| Nombre                                                                 | Requerimientos extra                  | Descripción |
+|------------------------------------------------------------------------|---------------------------------------|-------------|
+| [Reproductores de música de Linux](/es/wiki/linux-media-players)       | *Instalado por defecto* (ver wiki)    | Cualquier reproductor compatible con MPRIS para Linux o BSD (un 99% de ellos, como Spotify, Clementine, VLC...). |
+| [Spotify para Windows y MacOS](/es/wiki/spotify-for-windows-and-macos) | *Instalado por defecto*               | La app de escritorio de Spotify para Windows y MAC OS. |
+| [Spotify Web](/es/wiki/spotify-web-api)                                | *Instalado por defecto*               | La API oficial de Spotify Web. Échale un ojo a su artículo de la wiki para más detalles de cómo usarla. |
 
-### The players
-The embedded video players inside the app. If you're using a binary, you don't have to worry about this, since it already comes with [Mpv](https://mpv.io/) inside it.
+### Los reproductores de vídeo
+Los reproductores de vídeo integrados dentro de la app. Si estás usando un binario, no te tienes que preocupar, porque ya viene con [Mpv](https://mpv.io/) dentro.
 
-You'll be able to choose between Mpv and the external player. The latter lets you play Vidify's music videos essentially anywhere. It will send all the music video information to the Vidify app, **Vidify TV**. It's available on Android and Android TV [here](https://play.google.com/store/apps/details?id=com.glowapps.vidify).
+Podrás escoger entre Mpv y el reproductor externo. Este último te permite reproducir los videoclips de Vidify esencialmente en cualquier sitio. Enviará información de los vídeos a la app de Vidify, **Vidify TV**. Está disponible para Android y Android TV [aquí](https://play.google.com/store/apps/details?id=com.glowapps.vidify).
