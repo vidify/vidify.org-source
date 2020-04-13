@@ -1,7 +1,7 @@
 enable: true
 
 heading: "Play live music videos anywhere"
-description: "With Vidify you can reproduce in real time the videos playing on your computer on your computer, phone or TV."
+description: "With Vidify, you can easily broadcast the music videos of what's playing on your computer."
 button: true
 btnText: "Learn More"
 btnSkip: "#about"

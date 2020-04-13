@@ -4,12 +4,12 @@ item:
   - icon: tf-profile-male
     title: Easy to use
     description: >
-      All you have to do is open Vidify on a computer and, optionally, the app on your phone or television.
+      No need to follow complicated set-ups. Just run Vidify and start playing music!
 
   - icon: tf-mobile
-    title: Cross platform
+    title: Flexible
     description: >
-      One of the most important parts is flexibility. You can reproduce the music videos on your phone, tablet, TV or computer with data from different players, like Spotify or VLC.
+      You can reproduce the music videos on your phone, tablet, TV or computer with data from different music players, like Spotify or VLC.
 
   - icon: tf-tools-2
     title: Customizable

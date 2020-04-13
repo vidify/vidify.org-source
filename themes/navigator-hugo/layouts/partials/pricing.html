@@ -40,7 +40,7 @@
         <div class="justify-content-center">
             {{ "<!-- download buttons -->" | safeHTML }}
             {{ partial "download-buttons" . }}
-            <div class="text-center">
+            <div class="text-center text-aligned">
                 {{ with $pricing.bottomText }}<p>{{ . | markdownify }}</p>{{ end }}
             </div>
         </div>

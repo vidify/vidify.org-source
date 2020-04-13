@@ -405,6 +405,11 @@ a:focus, a:hover {
   margin-bottom: 10px;
 }
 
+.text-aligned p {
+  margin: 0 auto;
+  width: 50%;
+}
+
 .bg-gray {
   background: #f9f9f9;
 }
