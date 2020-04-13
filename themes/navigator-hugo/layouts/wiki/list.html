@@ -8,6 +8,7 @@
         {{ .Content }}
         {{ if (len .Pages) ne 0 }}
         <hr>
+        {{ if (len (where .Pages "Params.type" "!=" "developer")) ne 0 }}
         <h1>More</h1>
         <span>You can read other articles on the Wiki:</span>
         <ul>
@@ -16,6 +17,8 @@
             {{ end }}
         </ul>
         <hr>
+        {{ end }}
+        {{ if (len (where .Pages "Params.type" "developer")) ne 0 }}
         <h1>Developer</h1>
         <span>Advanced articles intended for developers:</span>
         <ul>
@@ -23,6 +26,7 @@
             <li><a href="{{ .Permalink | absLangURL }}">{{ .Title }}</a></li>
             {{ end }}
         </ul>
+        {{ end }}
         {{ end }}
     </div>
 </section>
