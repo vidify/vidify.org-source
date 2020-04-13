@@ -4,21 +4,21 @@
     <div class="top-footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>{{ $footer.aboutTitle }}</h3>
                     {{ with $footer.description }}<p>{{ . | markdownify }}</p>{{ end }}
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>{{ $footer.githubTitle }}</h3>
                     <ul>
                         {{ range .Site.Menus.github }}
                         <li>
-                            <a href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
+                            <a href="{{ .URL | absLangURL }}" target="_blank" rel="noreferrer">{{ i18n .Name }}</a>
                         </li>
                         {{ end }}
                     </ul>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>{{ $footer.quicklinkTitle }}</h3>
                     <ul>
                         {{ range .Site.Menus.quicklink }}
@@ -27,15 +27,6 @@
                         </li>
                         {{ end }}
                     </ul>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>{{ $footer.subscribeTitle }}</h3>
-                    <form class="subscribe-form">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        </div>
-                        <button type="submit" class="btn btn-main-sm">Subscribe Now</button>
-                    </form>
                 </div>
             </div>
         </div>
