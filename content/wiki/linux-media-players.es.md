@@ -1,17 +1,17 @@
 ---
-title: "Linux Media Players"
-description: "What the API means, and how to use it"
+title: "Reproductores de Música de Linux"
+description: "Qué significa la API y cómo usarla"
 author: "Mario Ortiz Manero"
 date: 2020-04-05
 ---
 
-This is the default API used currently in the app. It obtains information from any MPRIS compatible media player (MPRIS is a standard interface widely used for media players on Linux). All you may need to install are the following libraries, although they will probably be installed in your system already:
+Esta es la API más recomendada para usuarios de Linux. Obtiene información de cualquier reproductor compatible con MPRIS (MPRIS es una interfaz estándar muy usada en Linux). Lo único que necesitas instalar son las siguientes librerías, aunque probablemente ya estarán instaladas en tu sistema:
 
-* [PyGI](https://pygobject.readthedocs.io/en/latest/) (not packaged on PyPi, you need to install it from your distribution's repository - it's usually called python-gi, python-gobject or pygobject). Here's a quick [tutorial](https://pygobject.readthedocs.io/en/latest/getting_started.html) on how to install it on most systems.
+* [PyGI](https://pygobject.readthedocs.io/en/latest/) (no disponible en PyPi, tienes que instalarlo en los repositorios de tu distribución - normalmente se llama `python-gi`, `python3-gobject`, o `pygobject`). Aquí hay un [tutorial](https://pygobject.readthedocs.io/en/latest/getting_started.html) de cómo instalarlo en la mayoría de los sistemas.
 
-* [GLib](https://developer.gnome.org/glib/). You most likely have it installed already.
+* [GLib](https://developer.gnome.org/glib/). Probablemente lo tengas instalado ya.
 
 
 ### Current limitations
-* Spotify on Linux doesn't currently support the MPRIS property `Position`.
-* Currently, changing players while the app is open won't refresh the player to the last one.
+* Spotify en Linux no tiene actualmente soporte para la propiedad MPRIS `Position`.
+* Actualmente, cambiar reproductores MPRIS mientras la app está abierta no refrescará el reproductor al último.

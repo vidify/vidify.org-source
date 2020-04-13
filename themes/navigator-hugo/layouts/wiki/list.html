@@ -12,7 +12,7 @@
         <span>You can read other articles on the Wiki:</span>
         <ul>
             {{ range where .Pages "Params.type" "!=" "developer" }}
-            <li><a href="{{ .Permalink | absURL }}">{{ .Title }}</a></li>
+            <li><a href="{{ .Permalink | absLangURL }}">{{ .Title }}</a></li>
             {{ end }}
         </ul>
         <hr>
@@ -20,7 +20,7 @@
         <span>Advanced articles intended for developers:</span>
         <ul>
             {{ range where .Pages "Params.type" "developer" }}
-            <li><a href="{{ .Permalink | absURL }}">{{ .Title }}</a></li>
+            <li><a href="{{ .Permalink | absLangURL }}">{{ .Title }}</a></li>
             {{ end }}
         </ul>
         {{ end }}
