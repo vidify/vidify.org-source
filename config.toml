@@ -69,15 +69,13 @@ name    = "blog"
 url     = "blog"
 weight  = 3
 [[menu.nav]]
-name    = "github"
-url     = "https://github.com/vidify"
-weight  = 4
-[[menu.nav]]
 name    = "contact"
 url     = "contact"
+weight  = 4
+[[menu.nav]]
+name    = "github"
+url     = "https://github.com/vidify"
 weight  = 5
-[[menu.language]]
-name = "language"
 
 # Footer Service Menu
 [[menu.github]]

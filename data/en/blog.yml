@@ -3,3 +3,7 @@ enable: true
 topTitle: "THE WIKI AND BLOG"
 title: "The latest updates"
 subtitle: ""
+
+byText: "By"
+atText: "at"
+readMoreButton: "Read more"

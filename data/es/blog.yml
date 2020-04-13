@@ -3,3 +3,7 @@ enable: true
 topTitle: "LA WIKI Y EL BLOG"
 title: "Las últimas novedades"
 subtitle: ""
+
+byText: "Por"
+atText: "a"
+readMoreButton: "Leer más"

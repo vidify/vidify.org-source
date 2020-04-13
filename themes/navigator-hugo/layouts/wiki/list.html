@@ -2,6 +2,7 @@
 
 {{ partial "page-title.html" . }}
 
+{{ $wiki := (index .Site.Data .Site.Language.Lang).wiki }}
 {{ "<!-- Wiki Section Start -->" | safeHTML }}
 <section class="blog section" id="wiki">
     <div class="container">
@@ -9,8 +10,8 @@
         {{ if (len .Pages) ne 0 }}
         <hr>
         {{ if (len (where .Pages "Params.type" "!=" "developer")) ne 0 }}
-        <h1>More</h1>
-        <span>You can read other articles on the Wiki:</span>
+        <h1>{{ $wiki.moreTitle }}</h1>
+        <p>{{ $wiki.moreDescription }}</p>
         <ul>
             {{ range where .Pages "Params.type" "!=" "developer" }}
             <li><a href="{{ .Permalink | absLangURL }}">{{ .Title }}</a></li>
@@ -19,8 +20,8 @@
         <hr>
         {{ end }}
         {{ if (len (where .Pages "Params.type" "developer")) ne 0 }}
-        <h1>Developer</h1>
-        <span>Advanced articles intended for developers:</span>
+        <h1>{{ $wiki.developerTitle }}</h1>
+        <p>{{ $wiki.developerDescription }}</p>
         <ul>
             {{ range where .Pages "Params.type" "developer" }}
             <li><a href="{{ .Permalink | absLangURL }}">{{ .Title }}</a></li>

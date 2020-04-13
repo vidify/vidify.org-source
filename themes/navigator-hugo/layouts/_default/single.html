@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $blog := (index .Site.Data .Site.Language.Lang).blog }}
 {{ $defaultDateFormat := .Site.Params.dateFormat }}
 <section class="blog-single section">
     <div class="container">
@@ -19,10 +20,12 @@
                         {{ end }}
                         <li class="list-inline-item">
                             {{ with .Params.author }}
-                            <span>By {{ . }}</span>
+                            <span>{{ $blog.byText }}</span>
+                            <span>{{ . }}</span>
                             {{ end }}
                             {{ with .Params.date }}
-                            <span>at {{ dateFormat $defaultDateFormat . }}</span>
+                            <span>{{ $blog.atText }}</span>
+                            <span>{{ dateFormat $defaultDateFormat . }}</span>
                             {{ end }}
                         </li>
                     </ul>

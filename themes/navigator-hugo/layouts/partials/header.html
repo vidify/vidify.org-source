@@ -40,9 +40,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
-                                    {{ range first 1 .Site.Menus.language }}
-                                    {{ i18n .Name }}
-                                    {{ end }}
+                                    {{ i18n "language" }}
                                 </a>
                                 <div class="dropdown-menu">
                                     {{ range sort .Site.Params.langsList "code" "asc" }}

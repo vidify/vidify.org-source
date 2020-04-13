@@ -1,4 +1,5 @@
 <!-- This is used with .Site.RegularPages in context -->
+{{ $blog := (index .Site.Data .Site.Language.Lang).blog }}
 {{ "<!-- single blog post -->" | safeHTML }}
 <article class="col-12 col-md-4">
     <div class="post-item">
@@ -15,9 +16,11 @@
         <div class="post-meta">
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <span>By</span>
-                    <span>{{ .Params.author }}</span>
-                    <span>at</span>
+                    {{ with .Params.author }}
+                    <span>{{ $blog.byText }}</span>
+                    <span>{{ . }}</span>
+                    {{ end }}
+                    <span>{{ $blog.atText }}</span>
                     <span>{{ .Date.Format .Site.Params.dateFormat }}</span>
                 </li>
             </ul>
@@ -25,7 +28,7 @@
         <div class="post-content">
             <p>{{ .Summary | chomp | truncate 200 }}</p>
         </div>
-        <a class="btn btn-main" href="{{ .Permalink }}">Read more</a>
+        <a class="btn btn-main" href="{{ .Permalink }}">{{ $blog.readMoreButton }}</a>
     </div>
 </article>
 {{ "<!-- /single blog post -->" | safeHTML }}
