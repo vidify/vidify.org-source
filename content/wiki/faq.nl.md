@@ -1,9 +1,12 @@
 ---
 title: "FAQ"
-description: "Frequently Asked Questions"
+description: "Veel gestelde vragen"
 author: "Mario Ortiz Manero"
 date: 2020-04-05
 ---
+
+### Mijn favoriete muziekspeler is niet ondersteund door Vidify
+Er zijn vele verschillende muziekspelers, en we werken eraan om hier zoveel mogelijk van te ondersteunen. [Laat dit ons weten](https://github.com/vidify/vidify/issues/new), zodat we weten welke het meest populair zijn.
 
 ### Vidify werkt niet goed met Python 3.8 en PySide2
 PySide2 heeft pas Python 3.8 ondersteuning vanaf versie 5.14. Zorg er dus voor dat je minimaal deze versie gebruikt en probeer het nog een keer. `TypeError: 'Shiboken.ObjectType' object is not iterable` is de foutmelding die je anders zult zien.

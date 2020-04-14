@@ -1,9 +1,9 @@
 enable: true
 
-topTitle: "THE WIKI AND BLOG"
-title: "The latest updates"
+topTitle: "DE WIKI EN HET BLOG"
+title: "Het laatste nieuws"
 subtitle: ""
 
-byText: "By"
-atText: "at"
-readMoreButton: "Leer más"
+byText: "Door"
+atText: "op"
+readMoreButton: "Lees meer"

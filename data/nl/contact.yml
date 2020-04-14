@@ -1,18 +1,18 @@
 enable: true
 
-topTitle: "DROP US A NOTE"
-title: "Contact Us"
-subtitle: "Having trouble or want to ask a question? Send us a mail or a message on Twitter."
+topTitle: "LAAT EEN BERICHT ACHTER"
+title: "Neem contact op"
+subtitle: "Heb je een probleem, of wil je een vraag stellen? Stuur een email, of een bericht op Twitter (in het Engels of Spaans)."
 
-emailSubjectPlaceholder: "Subject"
-emailBodyPlaceholder: "Message"
-emailButtonSend: "SEND"
-twitterMessageText: "Or send us a DM on Twitter"
-helpText: "Your email client didn't open? You might need to configure your browser. [Click here](https://www.makeuseof.com/tag/how-to-change-the-default-email-program-for-mailto-links/)."
+emailSubjectPlaceholder: "Onderwerp"
+emailBodyPlaceholder: "Bericht"
+emailButtonSend: "VERSTUUR"
+twitterMessageText: "Of stuur ons een DM op Twitter"
+helpText: "Je email client opende niet? Misschien moet je jouw browser nog configureren. [Click here](https://www.makeuseof.com/tag/how-to-change-the-default-email-program-for-mailto-links/)."
 
 authorName: "Mario Ortiz Manero"
 authorImage: "images/author.jpg"
-authorDescription: "Founder and main developer of the project."
+authorDescription: "Oprichter en hoofd-ontwikkelaar van het project."
 authorEmail: "mailto:marioortizmanero@gmail.com"
 authorGithub: "https://github.com/marioortizmanero"
 authorLinkedin: "https://www.linkedin.com/in/mario-ortiz-manero-3b0472186/"

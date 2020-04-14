@@ -1,46 +1,46 @@
 enable: true
 
-topTitle: HOW IT LOOKS LIKE
+topTitle: HOE HET ERUIT ZIET
 title: Screenshots
-subtitle: See for yourself how Vidify looks like on its different platforms.
+subtitle: Zie hoe Vidify eruit ziet op verschillende platformen.
 
 filtermenu:
   - name: Android TV
     category: tv
 
-  - name: Android phone
+  - name: Android Telefoon
     category: mobile
 
   - name: Desktop app
     category: desktop
 
 item:
-  - title: The Android TV app
+  - title: De Android TV app
     image: images/portfolio/tv01.png
     thumb: images/portfolio/tv01-thumb.png
     category: tv
 
-  - title: Playing a music video
+  - title: Een muziekvideo afspelen
     image: images/portfolio/mobile01.png
     thumb: images/portfolio/mobile01-thumb.png
     category: mobile
 
-  - title: Video playing on Desktop
+  - title: Afspelende Video op een Desktop
     image: images/portfolio/laptop01.png
     thumb: images/portfolio/laptop01-thumb.png
     category: desktop
 
-  - title: Android Phone app
+  - title: De Android Telefoon app
     image: images/portfolio/mobile02.png
     thumb: images/portfolio/mobile02-thumb.png
     category: mobile
 
-  - title: The setup screen on Desktop
+  - title: Het instel scherm op een Desktop
     image: images/portfolio/laptop02.png
     thumb: images/portfolio/laptop02-thumb.png
     category: desktop
 
-  - title: Playing a music video
+  - title: Een muziekvideo afspelen
     image: images/portfolio/tv02.png
     thumb: images/portfolio/tv02-thumb.png
     category: tv
