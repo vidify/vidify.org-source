@@ -1,0 +1,25 @@
+[home]
+other = "Start"
+[wiki]
+other = "Wiki"
+[blog]
+other = "Blog"
+[github]
+other = "GitHub"
+[contact]
+other = "Contact"
+
+[language]
+other = "Taal"
+
+[vidify]
+other = "Vidify"
+[audiosync]
+other = "Audiosync"
+[vidifyorg]
+other = "vidify.org"
+
+[gettingstarted]
+other = "Introductie"
+[faqs]
+other = "FAQ's"

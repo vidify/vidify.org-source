@@ -1,6 +1,6 @@
 ---
 title: "Spotify Web API"
-description: "What the API means and how it works"
+description: "Wat de API betekent en hoe die werkt"
 author: "Mario Ortiz Manero"
 date: 2020-04-05
 ---

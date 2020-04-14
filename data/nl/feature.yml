@@ -2,16 +2,16 @@ enable: true
 
 item:
   - icon: tf-profile-male
-    title: Easy to use
+    title: Makkelijk te gebruiken
     description: >
-      No need to follow complicated set-ups. Just open Vidify and start playing music!
+      Geen ingewikkelde instructies. Open simpelweg Vidify en begin met muziek afspelen!
 
   - icon: tf-mobile
-    title: Flexible
+    title: Flexibel
     description: >
-      You can reproduce the music videos on your phone, tablet, TV or computer with data from different music players, like Spotify or VLC.
+      Je kan de muziekvideo's reproduceren op jouw telefoon, tablet, TV of computer met data van verschillende muziekspelers, zoals Spotify of VLC.
 
   - icon: tf-tools-2
-    title: Customizable
+    title: Personaliseerbaar
     description: >
-      Although Vidify offers sane defaults, it's up to you if you want lyrics, dark mode, a different quality playback...
+      Hoewel Vidify redelijke standaard instellingen bevat, ligt de controle bij jou, wil je songteksten, dark mode, of een andere afspeel kwaliteit...

@@ -1,8 +1,8 @@
 enable: true
 
-heading: "Play live music videos anywhere"
-description: "With Vidify, you can easily broadcast music videos of what's playing on your computer."
+heading: "Speel overal live muziekvideo's af"
+description: "Met Vidify kun je gemakkelijk muziekvideo's kijken van de muziek die op jouw computer afspeelt."
 button: true
-btnText: "Learn More"
+btnText: "Meer weten"
 videoThumb: "images/slider/video-player-thumb.jpg"
 videoURL: "https://www.youtube.com/embed/ddvQKNL1FjI"

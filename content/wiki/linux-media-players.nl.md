@@ -1,6 +1,6 @@
 ---
-title: "Linux Media Players"
-description: "What the API means, and how to use it"
+title: "Linux Mediaspelers"
+description: "Wat de API betekent en hoe die werkt"
 author: "Mario Ortiz Manero"
 date: 2020-04-05
 ---

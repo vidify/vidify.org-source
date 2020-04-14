@@ -1,26 +1,26 @@
 enable: true
 
-topTitle: GET IT NOW
+topTitle: DOWNLOAD NU
 title: Download
 subtitle: >
-    Vidify's desktop app is completely open source. It's available for free to anyone. If you want to use it on your TV or phone, you'll need to subscribe on Google Play. Regardless, you can try out the demo without a cost.
+    Vidify's desktop app is volledig open source. Het is volledig gratis voor iedereen. Maar als je het op jouw TV of telefoon wilt gebruiken, moet je je abonneren op Google Play. Desondanks kun je de demo versie volledig gratis uitproberen.
 bottomText: >
-    Check out the [Getting Started article](/wiki/) to learn how it's intalled and how to get it running.
+    Lees het [Introductie artikel](/wiki/) om meer te weten te komen over hoe je het installeert en gebruikt.
 
 item:
-  - name: BASIC
-    price: FREE
-    description: Perfect for entertainment purposes at home
+  - name: BASIS
+    price: GRATIS
+    description: Perfect voor entertainment doeleinden thuis
     featurelist:
-      - item: Play videos on the same computer
-      - item: Demo version for the external videos app
+      - item: Speel muziekvideo's af op dezelfde computer
+      - item: Demo versie voor het extern afspelen van video's
 
-  - name: SUBSCRIPTION
-    price: 4.99€/mo
-    description: Suitable for bars, clubs, home theaters...
+  - name: ABONNEMENT
+    price: €4.99 per maand
+    description: Voor bars, clubs en home theaters...
     featurelist:
-      - item: Play videos on the same computer
-      - item: Full access to the external videos app
+      - item: Speel muziekvideo's af op dezelfde computer
+      - item: Volledige toegang tot de app voor het extern afspelen van video's.
 
 download:
   - name: WINDOWS

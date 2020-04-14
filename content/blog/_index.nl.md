@@ -1,5 +1,5 @@
 ---
-title: "The latest updates"
+title: "Laatste Nieuws"
 draft: false
-description: "The blog entries for the Vidify website"
+description: "De blog items voor de Vidify website"
 ---

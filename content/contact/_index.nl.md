@@ -1,5 +1,5 @@
 ---
-title: "Contact Us"
+title: "Neem contact op"
 draft: false
-description: "Getting help or asking a question"
+description: "Vraag om hulp, of stel een vraag"
 ---
