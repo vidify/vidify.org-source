@@ -16,7 +16,7 @@ item:
       - item: Demo version for the external videos app
 
   - name: SUBSCRIPTION
-    price: 4.99€/mo
+    price: $4.49/mo
     description: Suitable for bars, clubs, home theaters...
     featurelist:
       - item: Play videos on the same computer
