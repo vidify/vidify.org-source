@@ -1,7 +1,7 @@
 enable: true
 
 heading: "Reproduce videoclips en directo donde quieras"
-description: "Con Vidify, puedes emitir fácilmente videoclips de la música que se está reproduciendo en tu ordenador."
+description: "Con Vidify, puedes reproducir videoclips de la música que se está escuchando en tu ordenador en cualquiera de tus dispositivos favoritos."
 button: true
 btnText: "Aprende más"
 videoThumb: "images/slider/video-player-thumb.jpg"
