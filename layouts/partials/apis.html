@@ -1,0 +1,19 @@
+{{ $apis := (index .Site.Data .Site.Language.Lang).apis }}
+<div class="apis-table">
+    <table>
+        <thead>
+            <tr>
+                <th>{{ $apis.nameText }}</th>
+                <th>{{ $apis.descriptionText }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range $apis.items }}
+            <tr>
+                <th><a href="{{ .url | absURL }}" alt="{{ .name }}"><img src="{{ .image }}"><span>{{ .name }}</span></a></th>
+                <td>{{ .description }}</td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</div>

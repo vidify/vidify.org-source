@@ -1,0 +1,15 @@
+<!-- Image with zoom feature and customization:
+    @0: thumbnail url
+    @1: full-res url
+    @2: alt
+    @3: width (optional)
+-->
+<div class="portfolio-block">
+    <img class="center-img-block" src="{{ .Get 0 | absURL }}" alt="{{ .Get 2 }}" style="{{ with (.Get 3) }}max-width:{{ . }};{{ end }}">
+    <div class="caption">
+        <a class="gallery-open" href="{{ .Get 1 | absURL }}" data-fancybox="image-1">
+            <i class="tf-ion-ios-search-strong search-icon"></i>
+            
+        </a>
+    </div>
+</div>

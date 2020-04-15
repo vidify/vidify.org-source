@@ -1204,7 +1204,6 @@ a:focus, a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(240, 50, 107, 0.9);
   transition: .3s all;
 }
 
@@ -1275,6 +1274,15 @@ a:focus, a:hover {
   .portfolio-block .caption h4 {
     font-size: 16px;
   }
+}
+
+.overlay-color:before {
+  background: rgba(240, 50, 107, 0.9);
+}
+
+.center-img-block {
+  display: block;
+  margin: auto;
 }
 
 
@@ -1937,4 +1945,28 @@ a:focus, a:hover {
 .top-bar.animated-header {
   background: #222222;
   box-shadow: none;
+}
+
+/*=================================================================
+  Other elements
+==================================================================*/
+
+.apis-table {
+  display: block;
+  position: relative;
+  max-height: 500px;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.apis-table a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.apis-table img {
+  width: 3.5em;
+  margin-right: 7px;
+  flex-shrink: 0;
 }

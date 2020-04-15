@@ -32,7 +32,7 @@
         <div class="row filtr-container">
             {{ range $portfolio.item }}
                 <div class="col-6 col-md-4 padding-0 filtr-item" data-category="{{.category}}">
-                    <div class="portfolio-block">
+                    <div class="portfolio-block overlay-color">
                         <img class="img-fluid" src="{{ .thumb | absURL }}" alt="portfolio-image">
                         <div class="caption">
                             <a class="gallery-open" href="{{ .image | absURL }}" data-fancybox="image-1">

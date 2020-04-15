@@ -5,29 +5,24 @@ author: "Mario Ortiz Manero"
 ---
 
 # Getting Started
-
-To use Vidify, you're always going to need the desktop app installed on the computer where the music is playing. The easiest way to install it is by downloading the binaries. You can reproduce the music videos from there, butif you want to do it on a TV or phone, you'll need the app for Android installed, which is connected to Vidify through the network.
-
-Vidify currently supports Spotify on Windows and Mac OS, and {{< tooltip "almost all" "all MPRIS compatible" >}} music players on Linux.
+## Downloading Vidify
+You'll need the **Vidify desktop app** installed on the computer where your music plays. You'll be able to play music videos inside it, but if you want to broadcast them to your phone or TV, you'll also need the app for Android, **Vidify TV**. The app will communicate with your computer through your network and play the videos in there. You can download both of them here:
 
 {{< partial "download-buttons.html" >}}
 
-If you're more tech savvy, it's better to download Vidify from [PyPi](https://pypi.org/project/vidify). Linux users can use other more native alternatives:
-* Arch Linux: [AUR](https://aur.archlinux.org/packages/vidify/).
-* Gentoo Linux: [GURU media-video/vidify](https://gpo.zugaina.org/media-video/vidify).
+*If you're more tech savvy, you might be interested in installing it from [PyPi](https://pypi.org/project/vidify), the [AUR](https://aur.archlinux.org/packages/vidify/), or [GURU](https://gpo.zugaina.org/media-video/vidify). More advanced details on [GitHub](https://github.com/vidify/vidify#installation).*
 
-More details about advanced intallations can be found on [GitHub](https://github.com/vidify/vidify#installation) (the README contains detailed information for more experienced users).
+## Playing content
+First of all, open the desktop app. When prompted to, select the **music player** you're using. Here are all available ones, currently:
 
-### The APIs
-An API is simply a source of information about the music playing on a device. For example, the Spotify desktop client, or iTunes. Here are the currently supported ones:
+{{< partial "apis.html" >}}
 
-| Name                                                          | Extra requirements                    | Description |
-|---------------------------------------------------------------|---------------------------------------|-------------|
-| [Linux Media Players](/wiki/linux-media-players)              | *Installed by default* (see the wiki) | Any MPRIS compatible media player for Linux or BSD (99% of them, like Spotify, Clementine, VLC...). |
-| [Spotify for Windows & MacOS](/wiki/spotify-for-windows-and-macos) | *Installed by default*                | The Spotify desktop app for Windows & MacOS. |
-| [Spotify Web](/wiki/spotify-web-api)                          | *Installed by default*                | The official Spotify Web API. Check its wiki article for more details on how to set it up. |
+Then, you need to indicate **where to play the videos**. You'll be able to choose between [the mpv player](https://mpv.io/) and the external player. With mpv, you'll be able to play the music videos inside that computer. Use the external player to reproduce music videos on any other device.
 
-### The players
-The embedded video players inside the app. If you're using a binary, you don't have to worry about this, since it already comes with [Mpv](https://mpv.io/) inside it.
+{{< img "/images/portfolio/laptop02-thumb.png" "/images/portfolio/laptop02.png" "How it looks like on your computer" "80%" >}}
 
-You'll be able to choose between Mpv and the external player. The latter lets you play Vidify's music videos essentially anywhere. It will send all the music video information to the Vidify app, **Vidify TV**. It's available on Android and Android TV [here](https://play.google.com/store/apps/details?id=com.glowapps.vidify).
+If you want to broadcast the music videos somewhere else, all you need to do is select the External Player and open **Vidify TV** on your phone or television. Inside it, a card will appear with information about the computer Vidify is running on. Select it to immediately start playing the videos:
+
+{{< img "/images/portfolio/tv01-thumb.png" "/images/portfolio/tv01.png" "How it looks like on your TV" "80%" >}}
+
+Make sure your computer with Vidify and your device with Vidify TV are in the same network. That way, your computer will tell what videos to play to your phone or TV. Vidify also needs a stable internet connection to play the videos.

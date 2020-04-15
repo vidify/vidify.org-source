@@ -1,0 +1,18 @@
+nameText: "Nombre"
+descriptionText: "Descripción"
+
+items:
+    - name: "Spotify para Windows o Mac OS"
+      description: "La app de escritorio de Spotify para Windows y Mac OS."
+      image: "/images/apis/spotify/swspotify.svg"
+      url: "/es/wiki/spotify-for-windows-and-macos"
+
+    - name: "Reproductores de Linux"
+      description: "Cualquier reproductor compatible con MPRIS para Linux o BSD (un 99% de ellos, como Spotify, Clementine, VLC...)."
+      image: "/images/apis/mpris.svg"
+      url: "/es/wiki/linux-media-players"
+
+    - name: "Spotify Web"
+      description: "La API oficial de Spotify Web. Échale un ojo a su artículo de la wiki para más detalles de cómo usarla."
+      image: "/images/apis/spotify/web.svg"
+      url: "/es/wiki/spotify-web-api"
