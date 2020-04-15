@@ -6,7 +6,7 @@ author: "Mario Ortiz Manero"
 
 # Getting Started
 ## Downloading Vidify
-You'll need the **Vidify desktop app** installed on the computer where your music plays. You'll be able to play music videos inside it, but if you want to broadcast them to your phone or TV, you'll also need the app for Android, **Vidify TV**. The app will communicate with your computer through your network and play the videos in there. You can download both of them here:
+You'll need the **Vidify desktop app** installed on the computer where your music usually plays. You'll be able to play music videos inside it, but if you want to broadcast them to your phone or TV, you'll also need the app for Android, **Vidify TV**. The desktop app will communicate with all the available devices in your network to play the videos inside them. You can download both of them here:
 
 {{< partial "download-buttons.html" >}}
 

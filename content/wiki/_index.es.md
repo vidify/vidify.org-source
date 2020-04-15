@@ -6,7 +6,7 @@ author: "Mario Ortiz Manero"
 
 # Introducción
 ## Descargando Vidify
-Necesitarás la **app de escritorio Vidify** instalada en el ordenador donde se reproduce tu música. Desde ahí podrás reproducir videoclips, pero si quieres verlos en tu móvil o TV necesitarás también la aplicación para Android, **Vidify TV**. Ésta se comunicará con Vidify a través de tu red y reproducirá los vídeos ahí. Puedes descargar ambos aquí:
+Necesitarás la **app de escritorio Vidify** instalada en el ordenador donde se reproduce tu música normalmante. Desde ahí podrás reproducir videoclips, pero si quieres verlos en tu móvil o TV necesitarás también la aplicación para Android, **Vidify TV**. La app de escritorio se comunicará con todos los dispositivos disponibles en tu red y reproducirá los videoclips en ellos. Puedes descargar ambos aquí:
 
 {{< partial "download-buttons.html" >}}
 
