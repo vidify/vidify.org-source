@@ -1557,6 +1557,7 @@ a:focus, a:hover {
 .team-member .member-photo {
   overflow: hidden;
   position: relative;
+  padding-top: 25px;
 }
 
 .team-member .member-photo img {

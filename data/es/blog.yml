@@ -2,7 +2,8 @@ enable: true
 
 topTitle: "LA WIKI Y EL BLOG"
 title: "Las últimas novedades"
-subtitle: ""
+subtitle: >
+    Échale un ojo a nuestra [Wiki](/wiki) para tutoriales y explicaciones, y nuestro [Blog](/blog) para artículos detallados y actualizaciones. ¡Y síguenos también en <a href="https://twitter.com/GlowAppsMobile" target="_blank" rel="noreferrer">Twitter</a> para manetenerte informado!
 
 byText: "Por"
 atText: "a"

@@ -8,6 +8,11 @@ enableRobotsTXT = true
 googleAnalytics = "UA-162662877-1"
 enableGitInfo = false
 
+[markup.goldmark.renderer]
+# Embedding raw HTML inside markdown isn't a problem because there isn't any
+# user-generated content.
+unsafe = true
+
 # Site parameters
 [Params]
 logo = "images/logo.png"

@@ -8,7 +8,7 @@
                 <div class="title text-center">
                     {{ with $blog.topTitle }}<h4>{{ . }}</h4>{{ end }}
                     {{ with $blog.title }}<h2>{{ . }}</h2><span class="border"></span>{{ end }}
-                    {{ with $blog.subtitle }}<p>{{ . }}</p>{{ end }}
+                    {{ with $blog.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
                 </div>
             </div>
         </div>
