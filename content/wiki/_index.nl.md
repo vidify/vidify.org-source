@@ -21,13 +21,9 @@ Meer details over geavanceerde installatie kun je vinden op [GitHub](https://git
 ### De APIs
 Een API is een bron van informatie over welke muziek er op het moment op jouw apparaat afspeelt. Zoals bijvoorbeeld: de Spotify desktop client, of iTunes. Deze APIs zijn op het moment ondersteund:
 
-| Naam                                         | Extra vereisten                         | Beschrijving |
-|----------------------------------------------|-----------------------------------------|--------------|
-| [Linux Media Players](/nl/wiki/linux-media-players)        | *Standaard geïnstalleerd* (zie de wiki) | Elke MPRIS compatibele mediaspeler voor Linux of BSD (99% zou zeker moeten werken, zoals Spotify, Clementine, VLC...). |
-| [Spotify voor Windows & MacOS](/wiki/spotify-for-windows-and-macos) | *Standaard geïnstalleerd*               | De Spotify desktop app voor Windows & MacOS, maakt gebruik van de [SwSpotify](https://github.com/SwagLyrics/SwSpotify) library. |
-| [Spotify Web](/wiki/spotify-web-api)                | *Standaard geïnstalleerd*               | De officiële Spotify Web API, maakt gebruik van [Tekore](https://github.com/felix-hilden/tekore). Zie de wiki voor instructies over hoe je dit instelt. |
+{{< partial "apis.html" >}}
 
 ### De videospelers
-De in de app ingebedde videospelers. Als je de binary gebruikt hoef je je hier geen zorgen over te maken, omdat deze al een installatie van [Mpv](https://mpv.io/) bevat.
+De in de app ingebedde videospelers. Als je de binary gebruikt hoef je je hier geen zorgen over te maken, omdat deze al een installatie van [mpv](https://mpv.io/) bevat.
 
 Je kunt kiezen tussen Mpv of een externe video speler. Deze laatste laat je Vidify's muziekvideo's praktisch overal afspelen. Het stuurt alle informatie over de muziekvideos naar de Vidify app, **Vidify TV**. Deze is eschikbaar voor Android en Android TV [here](https://play.google.com/store/apps/details?id=com.glowapps.vidify).

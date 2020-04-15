@@ -1,0 +1,18 @@
+nameText: "Name"
+descriptionText: "Description"
+
+items:
+    - name: "Spotify voor Windows/Mac OS"
+      description: "De Spotify desktop app voor Windows/Mac OS."
+      image: "/images/apis/spotify/swspotify.svg"
+      url: "/nl/wiki/spotify-for-windows-and-macos"
+
+    - name: "Linux Media Players"
+      description: "Elke MPRIS compatibele mediaspeler voor Linux of BSD (99% zou zeker moeten werken, zoals Spotify, Clementine, VLC...)."
+      image: "/images/apis/mpris.svg"
+      url: "/nl/wiki/linux-media-players"
+
+    - name: "Spotify Web"
+      description: "De officiële Spotify Web API. Zie de wiki voor instructies over hoe je dit instelt."
+      image: "/images/apis/spotify/web.svg"
+      url: "/nl/wiki/spotify-web-api"
