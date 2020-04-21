@@ -617,6 +617,7 @@ a:focus, a:hover {
 }
 
 .navbar-brand {
+  width: 150px;
   height: auto;
   padding: 0 15px 0 0;
 }
@@ -675,7 +676,7 @@ a:focus, a:hover {
 }
 
 .hero-area .block p {
-  color: #707d8f;
+  color: #9fa8b5;
   margin-bottom: 20px;
 }
 
@@ -1067,7 +1068,11 @@ a:focus, a:hover {
 /*=================================================================
   Pricing section
 ==================================================================*/
+.pricing-table .pricing-items {
+  padding-bottom: 20px;
+}
 .pricing-table .pricing-item {
+  height: 100%;
   margin-bottom: 15px;
   border-radius: 3px;
   padding-bottom: 40px;
@@ -1081,10 +1086,13 @@ a:focus, a:hover {
   list-style: none;
 }
 
+.pricing-btns {
+  padding: 15px 0;
+}
+
 .pricing-btn {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
   border-radius: 3px;
-  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -1114,7 +1122,7 @@ a:focus, a:hover {
 
 .pricing-table .pricing-item li {
   font-weight: 400;
-  padding: 10px 0;
+  padding: 10px 20px;
   color: #666;
 }
 
@@ -1970,4 +1978,90 @@ a:focus, a:hover {
   width: 3.5em;
   margin-right: 7px;
   flex-shrink: 0;
+}
+
+/*=================================================================
+  Share buttons
+==================================================================*/
+
+.sharing {
+  margin: 50px 0 20px 0;
+}
+
+.sharing p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.sharing-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+  font-size: 1em;
+  text-align: center;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0 10px;
+}
+
+.sharing-button-link,
+.sharing-button-icon {
+  display: inline-block
+}
+
+.sharing-button-link {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.sharing-button-facebook {
+  background-color: #3b5998;
+}
+
+.sharing-button-facebook:hover,
+.sharing-button-facebook:active {
+  background-color: #2d4373;
+}
+
+.sharing-button-twitter {
+  background-color: #55acee;
+}
+
+.sharing-button-twitter:hover,
+.sharing-button-twitter:active {
+  background-color: #2795e9;
+}
+
+.sharing-button-email {
+  background-color: #777777;
+}
+
+.sharing-button-email:hover,
+.sharing-button-email:active {
+  background-color: #5e5e5e;
+}
+
+.sharing-button-whatsapp {
+  background-color: #25D366;
+}
+
+.sharing-button-whatsapp:hover,
+.sharing-button-whatsapp:active {
+  background-color: #1DA851;
+}
+
+.sharing-button-telegram {
+  background-color: #54A9EB;
+}
+
+.sharing-button-telegram:hover {
+  background-color: #4B97D1;
 }
