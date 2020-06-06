@@ -1012,6 +1012,7 @@ a:focus, a:hover {
 }
 
 .contact-help {
+  display: none;
   margin-top: 5px;
   margin-bottom: 0px;
   font-style: italic;

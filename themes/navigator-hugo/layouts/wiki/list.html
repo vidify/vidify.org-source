@@ -7,9 +7,9 @@
 <section class="blog section" id="wiki">
     <div class="container">
         {{ .Content }}
-        {{ if (len .Pages) ne 0 }}
+        {{ if ne (len .Pages) 0 }}
         <hr>
-        {{ if (len (where .Pages "Params.type" "!=" "developer")) ne 0 }}
+        {{ if ne (len (where .Pages "Params.type" "!=" "developer")) 0 }}
         <h1>{{ $wiki.moreTitle }}</h1>
         <p>{{ $wiki.moreDescription }}</p>
         <ul>
@@ -19,7 +19,7 @@
         </ul>
         <hr>
         {{ end }}
-        {{ if (len (where .Pages "Params.type" "developer")) ne 0 }}
+        {{ if ne (len (where .Pages "Params.type" "developer")) 0 }}
         <h1>{{ $wiki.developerTitle }}</h1>
         <p>{{ $wiki.developerDescription }}</p>
         <ul>
