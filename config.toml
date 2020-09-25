@@ -32,6 +32,12 @@ name = "English"
 code = "nl"
 name = "Nederlands"
 
+[[Params.langsList]]
+
+code = "zh-CN"
+
+name = "Chinese-Simplified"
+
 
 ########### LANGUAGES ###########
 [Languages]
