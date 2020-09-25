@@ -1,7 +1,10 @@
 # Vidify's website
+
+##### Languages: [English](https://github.com/vidify/vidify.org-source/blob/master/README.md) | [Español](https://github.com/vidify/vidify.org-source/tree/master/docs/README-es.md) | [简体中文](https://github.com/vidify/vidify.org-source/tree/master/docs/README-CN.md)
+
 This website contains the source code for [vidify.org](https://vidify.org/).
 
-It's a static site generated with [Hugo](https://gohugo.io/), and based on the [Navigator Hugo theme](https://themes.gohugo.io/navigator-hugo/). You can find the built files at [vidify/vidify.org](https://github.com/vidify/vidify.org).
+It's a static site generated with [Hugo](https://gohugo.io/), and based on the [Navigator Hugo theme](https://themes.gohugo.io/navigator-hugo/). You can find the build files at [vidify/vidify.org](https://github.com/vidify/vidify.org).
 
 Any contribution is welcome! If you want to help translate the site to more languages, you'll have to follow the already existing structure for languages:
 
