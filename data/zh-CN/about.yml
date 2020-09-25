@@ -1,0 +1,14 @@
+  - enable: true
+
+    item:
+
+      - positionRight: false
+        image: images/about/about-1.jpg
+        title: "完美的氛围"
+        description: >
+            Vidify是在您的设备上播放正确内容的理想选择。它是专门为酒吧、俱乐部和家庭影院设计的。音乐视频的娱乐性出乎意料，它们帮助人们融入音乐，让自己更享受。
+      - positionRight: true
+        image: images/about/about-2.jpg
+        title: Fully automatic
+        description: >
+            Vidify 会根据电脑上播放的内容，自动复制音乐视频。做你的事情吧！让我们来处理视频。
