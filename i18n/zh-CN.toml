@@ -1,0 +1,39 @@
+[home]
+
+other = "主页"
+
+[wiki]
+
+other = "Wiki"
+
+[github]
+
+other = "Github"
+
+
+
+[language]
+
+other = "语言"
+
+
+
+[vidify]
+
+other = "Vidify"
+
+[audiosync]
+
+other = "音频同步"
+
+[vidifyorg]
+
+other = "vidify.org"
+
+[gettingstared]
+
+other = "如何开始"
+
+[faqs]
+
+other = "问答"
