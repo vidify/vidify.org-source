@@ -8,7 +8,7 @@ items:
       url: "/wiki/spotify-for-windows-and-macos"
 
     - name: "Linux Media Players"
-      description:"任何兼容 Linux 或 BSD 的 MPRIS 媒体播放器（99%的媒体播放器，如 Spotify、Clementine、VLC..）"
+      description: "任何兼容 Linux 或 BSD 的 MPRIS 媒体播放器（99%的媒体播放器，如 Spotify、Clementine、VLC..）"
       image: "/images/apis/mpris.svg"
       url: "/wiki/linux-media-players"
     

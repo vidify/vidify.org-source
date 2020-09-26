@@ -65,6 +65,14 @@ description = "Speel live muziekvideo's overal af"
 tags = "muziekvideo's, uitzenden, live, real-time, spotify, android, TV, windows, linux, mac os, televisie"
 dateFormat = "2 January 2006"
 
+[Languages.zh-CN]
+weight = 4
+languageCode = "zh-CN"
+title = "Vidify"
+description = ""
+tags = ""
+dateFormat = ""
+
 
 ########### MENU ###########
 # The Themefisher font is used for the icons:
