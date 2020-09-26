@@ -31,11 +31,8 @@ name = "English"
 [[Params.langsList]]
 code = "nl"
 name = "Nederlands"
-
 [[Params.langsList]]
-
 code = "zh-CN"
-
 name = "Chinese-Simplified"
 
 
