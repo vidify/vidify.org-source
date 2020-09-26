@@ -31,8 +31,9 @@ name = "English"
 [[Params.langsList]]
 code = "nl"
 name = "Nederlands"
-
-
+[[Params.langsList]]
+code = "cn"
+name = "简体中文"
 ########### LANGUAGES ###########
 [Languages]
 [Languages.en]
@@ -58,6 +59,14 @@ title = "Vidify"
 description = "Speel live muziekvideo's overal af"
 tags = "muziekvideo's, uitzenden, live, real-time, spotify, android, TV, windows, linux, mac os, televisie"
 dateFormat = "2 January 2006"
+
+[Languages.cn]
+weight = 4
+languageCode = "zh-cn"
+title = "Vidify"
+description = "123"
+tags = "456"
+dateFormat = "789"
 
 
 ########### MENU ###########

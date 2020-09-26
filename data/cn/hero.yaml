@@ -1,0 +1,8 @@
+enable: true
+
+heading: "在任何地方播放现场音乐视频"
+description: "有了 Vidify，您可以轻松地将电脑上播放的音乐视频复制到您最喜欢的任何设备上"
+button: true
+btnText: "了解更多资讯"
+videoThumb: "images/slider/video-player-thumb.jpg"
+videoURL: "https://www.youtube.com/embed/ddvQKNL1FjI"

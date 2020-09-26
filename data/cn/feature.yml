@@ -1,0 +1,16 @@
+enable: true
+
+item:
+
+  - icon: tf-profile-male
+    title: 简单易用
+    description: >
+      无需遵循复杂的设置，只需要打开 Vidify 然后开始播放音乐吧！ 
+  - icon: tf-mobile
+    title: 灵活性
+    description: >
+      你可以用不同的音乐播放器（如 Spotify 或 VLC）的数据在手机、平板电脑、电视或电脑上再现音乐视频
+  - icon: tf-tools-2
+    title: 可定制化
+    description: >
+      尽管 Vidify 提供了合理的默认值，如果你想要歌词，暗色主题，不同质量的播放，那就由你来决定...

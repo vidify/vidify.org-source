@@ -1,0 +1,42 @@
+enable: true
+
+topTitle: 即刻获取它
+title: 下载
+subtitle: >
+    Vidify 的 **桌面软件** 是完全开源的. 它能够对任何人 **免费** ，如果您想要在您的 **电视 或 手机** 上使用它，您将需要在 **Google Play 上订阅它**. 无论如何，您都可以不付费试用演示
+bottomText: >
+  查看 [使用文章](/wiki/) 来了解如何安装和如何让它运行
+
+item:
+  - name: 基础版
+    price: 免费
+    description: 非常适合在家里娱乐
+    featurelist:
+      - item: 在同一台电脑上播放视频 (Windows 或 Linux)
+      - item: Android 应用的演示版
+
+  - name: 订阅版
+    price: $4.49/月
+    description: 适用于酒吧、俱乐部、家庭影院...
+    featurelist:
+      - item: 在同一台电脑上播放视频 (Windows 或 Linux)
+      - item: 全面访问 Android 应用程序
+
+download:
+
+  - name: WINDOWS
+    icon: tf-ion-social-windows
+    type: github
+    repo: vidify/vidify
+    match: win10
+
+  - name: LINUX
+    icon: tf-ion-social-tux
+    type: github
+    repo: vidify/vidify
+    match: linux
+
+  - name: ANDROID
+    icon: tf-ion-social-android
+    type: play_store
+    id: com.glowapps.vidify
