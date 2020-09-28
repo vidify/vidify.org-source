@@ -1,0 +1,48 @@
+enable: true
+
+topTitle: HOW IT LOOKS LIKE
+title: 截图
+subtitle: 自己看看 Vidify 在不同平台上的表现吧
+
+filtermenu:
+
+  - name: 安卓电视
+    category: tv
+
+  - name: 安卓手机
+    category: mobile
+
+  - name: 桌面程序
+    category: desktop
+
+item:
+
+  - title: 安卓电视软件
+    image: images/portfolio/tv01.png
+    thumb: images/portfolio/tv01-thumb.png
+    category: tv
+
+  - title: 播放音乐视频
+    image: images/portfolio/mobile01.png
+    thumb: images/portfolio/mobile01-thumb.png
+    category: mobile
+
+  - title: 在桌面播放视频
+    image: images/portfolio/laptop01.png
+    thumb: images/portfolio/laptop01-thumb.png
+    category: desktop
+
+  - title: 安卓手机软件
+    image: images/portfolio/mobile02.png
+    thumb: images/portfolio/mobile02-thumb.png
+    category: mobile
+
+  - title: 桌面的设置界面
+    image: images/portfolio/laptop02.png
+    thumb: images/portfolio/laptop02-thumb.png
+    category: desktop
+
+  - title: 播放音乐视频
+    image: images/portfolio/tv02.png
+    thumb: images/portfolio/tv02-thumb.png
+    category: tv
