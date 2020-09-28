@@ -1,6 +1,6 @@
 # Vidify's website
 
-##### Languages: [English](https://github.com/vidify/vidify.org-source/blob/master/README.md) | [Español](https://github.com/vidify/vidify.org-source/tree/master/docs/README-es.md) | [简体中文](https://github.com/vidify/vidify.org-source/tree/master/docs/README-CN.md)
+##### Languages: [English](https://github.com/vidify/vidify.org-source/blob/master/README.md) | [Español](https://github.com/vidify/vidify.org-source/tree/master/docs/README.es.md) | [简体中文](https://github.com/vidify/vidify.org-source/tree/master/docs/README.cn.md)
 
 This website contains the source code for [vidify.org](https://vidify.org/).
 
