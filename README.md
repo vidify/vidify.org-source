@@ -21,4 +21,4 @@ Make sure the site still [builds correctly](#building) after your changes, and m
 
 You can build the website with `hugo`. All the static files will be saved into the `public/` directory. If you want to use live-reload, you can use `hugo server -D` and open [http://localhost:1313/](http://localhost:1313/).
 
-The `deploy.sh` script is intended to be used to publish new changes to the site, as it will modify the [vidify/vidify.org repo](https://vidify.org/).
+The `deploy.sh` script is intended to be used to publish new changes to the site, as it will modify the [vidify/vidify.org repo](https://github.com/vidify/vidify.org).

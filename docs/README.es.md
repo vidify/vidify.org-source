@@ -23,4 +23,4 @@ Make sure the site still [builds correctly](#building) after your changes, and m
 
 Puedes generar la página web con `hugo`. Todos los archivos estáticos se guardarán en el directorio `public`. Si quieres ver tus cambios en tiempo real, puedes usar `hugo server -D` y abrir [http://localhost:1313/](http://localhost:1313/).
 
-El script `deploy.sh` está creado para publicar nuevos cambios a la página, ya que modificará el [repositorio vidify/vidify.org](https://vidify.org/).
+El script `deploy.sh` está creado para publicar nuevos cambios a la página, ya que modificará el [repositorio vidify/vidify.org](https://github.com/vidify/vidify.org).
