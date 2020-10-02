@@ -1,17 +1,19 @@
+[language]
+other = "语言"
+
+# Navigation menu
 [home]
 other = "主页"
 [wiki]
 other = "Wiki"
 [blog]
 other = "博客"
-[github]
-other = "Github"
 [contact]
 other = "联系"
+[github]
+other = "Github"
 
-[language]
-other = "语言"
-
+# GitHub menu
 [vidify]
 other = "Vidify"
 [audiosync]
@@ -19,7 +21,8 @@ other = "音频同步"
 [vidifyorg]
 other = "vidify.org"
 
-[gettingstared]
+# Quicklinks menu
+[gettingstarted]
 other = "如何开始"
 [faqs]
 other = "问答"

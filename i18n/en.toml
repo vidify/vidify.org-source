@@ -1,17 +1,19 @@
+[language]
+other = "Language"
+
+# Navigation menu
 [home]
 other = "Home"
 [wiki]
 other = "Wiki"
 [blog]
 other = "Blog"
-[github]
-other = "GitHub"
 [contact]
 other = "Contact"
+[github]
+other = "GitHub"
 
-[language]
-other = "Language"
-
+# GitHub menu
 [vidify]
 other = "Vidify"
 [audiosync]
@@ -19,6 +21,7 @@ other = "Audiosync"
 [vidifyorg]
 other = "vidify.org"
 
+# Quicklinks menu
 [gettingstarted]
 other = "Getting Started"
 [faqs]
