@@ -4,33 +4,38 @@
 
 {{ $wiki := (index .Site.Data .Site.Language.Lang).wiki }}
 {{ "<!-- Wiki Section Start -->" | safeHTML }}
+{{ if ne (len .Pages) 0 }}
 <section class="blog section" id="wiki">
     <div class="container">
         {{ .Content }}
-        {{ if ne (len .Pages) 0 }}
         <hr>
-        {{ if ne (len (where .Pages "Params.type" "!=" "developer")) 0 }}
+
+        {{ $dev := where .Pages "Params.developer" "==" true }}
+        {{ $regular := .Pages | complement $dev }}
+
+        {{ if $regular }}
         <h1>{{ $wiki.moreTitle }}</h1>
         <p>{{ $wiki.moreDescription }}</p>
         <ul>
-            {{ range where .Pages "Params.type" "!=" "developer" }}
+            {{ range $regular }}
             <li><a href="{{ .Permalink | absLangURL }}">{{ .Title }}</a></li>
             {{ end }}
         </ul>
         <hr>
         {{ end }}
-        {{ if ne (len (where .Pages "Params.type" "developer")) 0 }}
+
+        {{ if $dev }}
         <h1>{{ $wiki.developerTitle }}</h1>
         <p>{{ $wiki.developerDescription }}</p>
         <ul>
-            {{ range where .Pages "Params.type" "developer" }}
+            {{ range $dev }}
             <li><a href="{{ .Permalink | absLangURL }}">{{ .Title }}</a></li>
             {{ end }}
         </ul>
         {{ end }}
-        {{ end }}
     </div>
 </section>
+{{ end }}
 {{ "<!-- Wiki Section End -->" | safeHTML }}
 
 {{ end }}

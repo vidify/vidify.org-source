@@ -10,10 +10,10 @@ Es una página web estática generada con [Hugo](https://gohugo.io/), y basada e
 
 ¡Cualquier contribución es bienvenida! Si quieres ayudar a traducir la web a más idiomas, tendrás que seguir los siguientes pasos:
 
-* Crear un nuevo apartado en `config.toml` dentro de `[[Params.langsList]]` y `[Languages]`.
+* Crear un nuevo apartado en `config.yaml` dentro de `params.langsList` y `languages`.
 * Traduce los términos en `i18n/LANG.toml`.
 * Traduce el contenido de la página principal en `data/LANG/*.yaml`.
-* Traduce los archivos en `content/contact/_index.LANG.md`, `content/wiki/LANG/*.LANG.md`, y opcionalmente `content/blog/LANG/*.LANG.md` (el archivo `content/blog/LANG/_index.LANG.md` es importante, pero los demás son opcionales).
+* Traduce los archivos en `content/LANG/*/*.md` (el archivo `content/LANG/blog/_index.md` es importante, pero los demás en `content/LANG/blog/*.md` son opcionales).
 
 Asegúrate de que la página aún [compila correctamente](#generación)
 

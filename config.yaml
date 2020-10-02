@@ -1,0 +1,108 @@
+# The Themefisher font is used for the icons:
+# https://github.com/themefisher/themefisher-font
+
+baseURL: "https://vidify.org/"
+title: Vidify
+theme: navigator-hugo
+
+enableRobotsTXT: true
+googleAnalytics: UA-162662877-1
+enableGitInfo: false
+
+defaultContentLanguage: en
+
+markup:
+  goldmark:
+    renderer:
+      # Embedding raw HTML inside markdown isn't a problem because there isn't
+      # any user-generated content.
+      unsafe: true
+
+params:
+  logo: images/logo.png
+  dateFormat: 'Jan _2, 2006'
+  enableBlogImages: false
+  langsList:
+    - code: es
+      name: Español
+    - code: en
+      name: English
+    - code: nl
+      name: Nederlands
+    - code: cn
+      name: 简体中文
+
+languages:
+  en:
+    weight: 1
+    contentDir: content/en
+    languageCode: en-us
+    title: Vidify
+    description: Play live music videos anywhere.
+    tags: >-
+      music videos, broadcast, live, real time, spotify, android, TV, windows,
+      linux, mac os, television
+    dateFormat: 'January 2, 2006'
+  es:
+    weight: 2
+    contentDir: content/es
+    languageCode: es-es
+    title: Vidify
+    description: Reproduce videoclips en directo y en cualquier sitio.
+    tags: >-
+      videoclips, en directo, broadcast, real time, spotify, android, TV,
+      windows, linux, mac os, videos, television
+    dateFormat: 2 January 2006
+  nl:
+    weight: 3
+    contentDir: content/nl
+    languageCode: nl-nl
+    title: Vidify
+    description: Speel live muziekvideo's overal af
+    tags: >-
+      muziekvideo's, uitzenden, live, real-time, spotify, android, TV, windows,
+      linux, mac os, televisie
+    dateFormat: 2 January 2006
+  cn:
+    weight: 4
+    contentDir: content/cn
+    languageCode: zh-cn
+    title: Vidify
+    description: 在任何地方播放现场音乐视频
+    tags: 音乐视频，广播，现实生活，Spotify，Android，电视，Windows，Linux，macOS，电视
+    dateFormat: 'January 2, 2006'
+
+menu:
+  nav:
+    - name: home
+      url: /
+      weight: 1
+    - name: wiki
+      url: wiki
+      weight: 2
+    - name: blog
+      url: blog
+      weight: 3
+    - name: contact
+      url: contact
+      weight: 4
+    - name: github
+      url: 'https://github.com/vidify'
+      weight: 5
+  github:
+    - name: vidify
+      url: 'https://github.com/vidify/vidify'
+      weight: 1
+    - name: audiosync
+      url: 'https://github.com/vidify/audiosync'
+      weight: 2
+    - name: vidifyorg
+      url: 'https://github.com/vidify/vidify.org'
+      weight: 3
+  quicklink:
+    - name: gettingstarted
+      url: '/wiki/#wiki'
+      weight: 1
+    - name: faqs
+      url: /wiki/faq/
+      weight: 2

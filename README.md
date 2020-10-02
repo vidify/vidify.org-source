@@ -10,10 +10,10 @@ It's a static site generated with [Hugo](https://gohugo.io/), and based on the [
 
 Any contribution is welcome! If you want to help translate the site to more languages, you'll have to follow the following steps:
 
-* Create an entry in `config.toml` inside `[[Params.langsList]]` and `[Languages]`.
+* Create an entry in `config.yaml` inside `params.langsList` and `languages`.
 * Translate the terms in `i18n/LANG.toml`.
 * Translate the main page content in `data/LANG/*.yaml`.
-* Translate the files at `content/contact/_index.LANG.md`, `content/wiki/LANG/*.LANG.md`, and optionally `content/blog/LANG/*.LANG.md` (the `content/blog/LANG/_index.LANG.md` file is important, but the rest are optional).
+* Translate the files at `content/LANG/*/*.md` (the `content/LANG/blog/_index.md` file is important, but the rest in `content/LANG/blog/*.md` are optional).
 
 Make sure the site still [builds correctly](#building) after your changes, and make a new pull request.
 

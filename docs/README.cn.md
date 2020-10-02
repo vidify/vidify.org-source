@@ -6,10 +6,10 @@
 
 欢迎任何的贡献！如果你想帮助这个网站翻译更多的语言，你将必须遵循现有的语言结构:
 
-* 在 `config.toml` 中创建一个包含 `[[Params.langsList]]` 和 `[Languages]` 的条目
+* 在 `config.yaml` 中创建一个包含 `params.langsList` 和 `languages` 的条目
 * 在 `i18n/LANG.toml` 中翻译网站的菜单
 * 在 `data/LANG/*.yaml` 中翻译网站的内容
-* 在 `content/blog/*.LANG.md`, `content/contact/*.LANG.md`, `content/wiki/*.LANG.md`... 中翻译网站的某些部分
+* 在 `content/LANG/*/*.md` 中翻译网站的某些部分
 
 ## 构建项目
 
