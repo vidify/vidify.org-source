@@ -22,6 +22,14 @@ params:
   logo: images/logo.png
   dateFormat: 'Jan _2, 2006'
   enableBlogImages: false
+  enableTopTitles: false
+  author:
+      name: Mario Ortiz Manero
+      image: 'images/author.jpg'
+      email: 'marioortizmanero@gmail.com'
+      github: 'https://github.com/marioortizmanero'
+      linkedin: 'https://www.linkedin.com/in/mario-ortiz-manero-3b0472186/'
+
   langsList:
     - code: es
       name: Español
