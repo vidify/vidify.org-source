@@ -1,7 +1,7 @@
 ---
 title: "The external player protocol"
 description: "A developer guide on how the external player protocol works"
-type: developer
+developer: true
 author: "Mario Ortiz Manero"
 ---
 

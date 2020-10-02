@@ -1,7 +1,7 @@
 ---
 title: "Het externe speler protocol"
 description: "Een handleiding voor ontwikkelaars over hoe het externe speler protocol werkt"
-type: developer
+developer: true
 author: "Mario Ortiz Manero"
 ---
 

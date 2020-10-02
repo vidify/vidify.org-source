@@ -3,7 +3,7 @@ title: "Optional parameters for functions in Rust"
 description: "Analyzing the different approaches for optional parameters in \
 Rust"
 author: "Mario Ortiz Manero"
-type: developer
+developer: true
 draft: true
 date: 2020-09-13
 ---

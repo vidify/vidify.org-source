@@ -3,7 +3,7 @@ title: "An attempt at live audio synchronization"
 description: "This article describes how Vidify's Audiosync extension works"
 author: "Mario Ortiz Manero"
 date: 2020-04-15
-type: developer
+developer: true
 draft: true
 ---
 
