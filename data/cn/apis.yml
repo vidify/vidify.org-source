@@ -1,0 +1,18 @@
+nameText: "Name"
+descriptionText: "Description"
+
+items:
+    - name: "Spotify for Windows or Mac OS"
+      description: "适用于 Windows 或 Mac OS 的 Spotify 桌面应用程序"
+      image: "/images/apis/spotify/swspotify.svg"
+      url: "/wiki/spotify-for-windows-and-macos"
+    
+    - name: "Linux Media Players"
+      description: "任何兼容 Linux 或 BSD 的 MPRIS 媒体播放器（99%的媒体播放器，如 Spotify、Clementine、VLC..） "
+      image: "/images/apis/mpris.svg"
+      url: "/wiki/linux-media-players"
+    
+    - name: "Spotify Web"
+      description: "官方的 Spotify Web Api, 查看这篇 wiki 文章以获得更多关于如何配置安装的内容"
+      image: "/images/apis/spotify/web.svg"
+      url: "/wiki/spotify-web-api"
