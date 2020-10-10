@@ -1,7 +1,6 @@
 ---
 title: "Optional parameters in Rust"
-description: "Analyzing the different approaches for optional parameters in \
-Rust"
+description: "Analyzing different approaches for optional parameters in Rust"
 author: "Mario Ortiz Manero"
 developer: true
 date: 2020-10-10
@@ -13,8 +12,8 @@ post it here, since this problem arose in the process of [integrating Rust
 ](https://github.com/ramsayleung/rspotify/pull/120#issuecomment-683349883).*
 
 Optional or default parameters are a very interesting feature of some languages
-that Rust specifically doesn't cover, and looks like it won't [anytime soon
-](https://github.com/rust-lang/rfcs/pull/2964). Say your library has lots of
+that Rust specifically doesn't cover (and looks like it won't [anytime soon
+](https://github.com/rust-lang/rfcs/pull/2964)). Say your library has lots of
 endpoints like so:
 
 ```rust
@@ -26,11 +25,11 @@ None, None, ...)`, or `endpoint(mandatory, Some(val1), Some(val2), ...)`,
 instead of the more intuitive `endpoint(mandatory)` or `endpoint(mandatory,
 val1, val2)`. Other languages like Python have named arguments, which make
 optional parameters natural and easier to read: `endpoint(mandatory, opt1=val1,
-opt2=val2)`, also allowing them to be written in any order.
+opt2=val2)`, while also allowing them to be written in any order.
 
 Even without official support, there are are lots of different ways to approach
 them in Rust, which is what this blog post tries to analyze. My goal is not to
-show which one is the "best" option, but to exhastively showcase the different
+show which one is the "best" option, but to exhaustively showcase the different
 ways they can be approached, and the ups and downs of each of them.
 
 ## Introducing an example
@@ -43,9 +42,8 @@ struct APIClient;
 ```
 
 This client will have various endpoints which can be used to send requests to
-the server. In this example, we will use a function with the actual
-implementation and some type aliases so that the following snippets are easier
-to read:
+the server. We will use a function with the actual implementation and some type
+aliases so that the following snippets are easier to read:
 
 ```rust
 use std::error::Error;
@@ -181,11 +179,27 @@ endpoint.
 
 ## D) With the builder pattern
 The previous approach can be improved by using the [builder pattern
-](https://www.ameyalokare.com/rust/2017/11/02/rust-builder-pattern.html) for the
-struct, so that building the parameters is simpler and more pretty to look at.
-In this case, we use the
-[`derive_builder`](https://crates.io/crates/derive_builder) crate to make the
-implementation less repetitive:
+](https://doc.rust-lang.org/1.0.0/style/ownership/builders.html) for the
+parameters, so that building the parameters is simpler and more pretty to look
+at:
+
+```rust
+let call1 = params::ApproachDBuilder::default()
+    .name("builder")
+    .opt1(param2)
+    .opt2(2134)
+    .build()?;
+api.approach_d(&call1)?;
+
+let call2 = params::ApproachDBuilder::default()
+    .name("builder")
+    .build()?;
+api.approach_d(&call2)?;
+```
+
+In this case, we use the [`derive_builder`
+](https://crates.io/crates/derive_builder) crate to make the implementation less
+repetitive:
 
 ```rust
 mod params {
@@ -207,29 +221,17 @@ impl APIClient {
 }
 ```
 
-```rust
-let call1 = params::ApproachDBuilder::default()
-    .name("builder")
-    .opt1(param2)
-    .opt2(2134)
-    .build()?;
-let call2 = params::ApproachDBuilder::default()
-    .name("builder")
-    .build()?;
-api.approach_d(&call1)?;
-api.approach_d(&call2)?;
-```
-
 ### Upsides
+* It's the most popular pattern in Rust for optional parameters.
 * The struct can still be reused in different calls.
 * No `None` or `Some` at sight.
-* Optional parameters are now associated to their name. This makes it easier
+* Optional parameters are now associated to their name, which makes it easier
 to read.
 
 ### Downsides
 * Somewhat verbose.
-* Can be difficult to scale, since it needs a struct and a function per
-endpoint.
+* In our example it can be difficult to scale, since it needs a struct and a
+function per endpoint.
 * More overhead, both at runtime and compile-time (specially if macros are
 used).
 * Constructing the values may fail. Thus, the documentation has to specify very
@@ -239,16 +241,20 @@ clearly which parameters are mandatory and which aren't.
 Here's a different take: what if the API was endpoint-oriented instead of
 client-oriented? Starting from the previous approach, we could make the call
 *inside the endpoint struct itself* instead of in the API client by overriding
-the `build` method from `derive_builder`.
+the `build` method from `derive_builder`:
 
-Note: this is assuming the client contains necessary information to make the
-requests, like a [`reqwest::Client`
-](https://docs.rs/reqwest/latest/reqwest/struct.Client.html) or authentication
-details. But for example, `ureq` can perform calls without a client instance,
-just by calling [`ureq::get` and similars
-](https://docs.rs/ureq/latest/ureq/fn.get.html). In that case, the API could
-just not have a client at all, and the `call` method wouldn't require a
-reference to the client.
+```rust
+ApproachEBuilder::default()
+    .name("endpoint-oriented")
+    .opt1(param2)
+    .opt2(1111)
+    .call(&api)?;
+ApproachEBuilder::default()
+    .name("endpoint-oriented")
+    .call(&api)?;
+```
+
+And its implementation:
 
 ```rust
 #[derive(Default, Builder)]
@@ -272,16 +278,14 @@ impl ApproachEBuilder {
 }
 ```
 
-```rust
-ApproachEBuilder::default()
-    .name("endpoint-oriented")
-    .opt1(param2)
-    .opt2(1111)
-    .call(&api)?;
-ApproachEBuilder::default()
-    .name("endpoint-oriented")
-    .call(&api)?;
-```
+Note: this is assuming the client contains necessary information to make the
+requests, like a [`reqwest::Client`
+](https://docs.rs/reqwest/latest/reqwest/struct.Client.html) or authentication
+details. But for example, `ureq` can perform calls without a client instance,
+just by calling [`ureq::get` and similars
+](https://docs.rs/ureq/latest/ureq/fn.get.html). In that case, the API could
+just not have a client at all, and the `call` method wouldn't require a
+reference to the client.
 
 ### Upsides
 * Fits perfectly for some specific APIs.
