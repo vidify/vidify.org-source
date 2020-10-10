@@ -12,8 +12,10 @@ post it here, since this problem arose in the process of [integrating Rust
 ](https://github.com/vidify/vidify/issues/107), while improving [Rspotify
 ](https://github.com/ramsayleung/rspotify/pull/120#issuecomment-683349883).*
 
-Optional parameters are a very interesting feature of some languages that Rust
-specifically doesn't cover. Say your library has lots of endpoints like so:
+Optional or default parameters are a very interesting feature of some languages
+that Rust specifically doesn't cover, and looks like it won't [anytime soon
+](https://github.com/rust-lang/rfcs/pull/2964). Say your library has lots of
+endpoints like so:
 
 ```rust
 fn endpoint<T1, T2, T3, ...>(mandatory: T1, opt1: Option<T2>, opt2: Option<T3>, ...);
@@ -369,7 +371,7 @@ variation of the builder pattern (that I know of). It requires both a function
 and a struct as well, so the implementation can be quite lengthy.
 * Still some compilation-time overhead.
 
-## G) Grouping up endpoints
+## G,H) Grouping up endpoints
 Another possible approach based on the previous approach of the builder pattern
 consists on grouping up all or some of the endpoints under a single struct.
 They will share the optional parameters, which is useful to avoid declaring a
@@ -454,19 +456,32 @@ established groups of endpoints.
 And as it's based on the hybrid builder pattern, it may still be hacky to
 implement and require compilation-time overhead.
 
+## I) Macros
+Rust macros support variadic arguments, which make it possible to create a
+macro with named parameters, like `foo!(1, c = 30, b = -2.0)`. Ideally, we
+want a macro that generates the macros for us, which does sound crazy. I wanted
+to at least try how existing crates approached this, and only found [`named`
+](https://crates.io/crates/named) and [`duang`](https://crates.io/crates/duang),
+which haven't been updated in years, and probably for good. I tried `duang`
+with Rust 1.47 but got some unexpected errors, so we can assume there are no
+crates that support this yet. It definitely sounds like a fun challenge, if
+it's still possible to implement.
+
 ## Conclusion
-Whew! That was more lengthy than I expected. Some of these endpoints might
-be unnecessarily complicated or weird, but hopefully this serves as a good
+Whew! That took more than I expected. Some of these endpoints might be
+unnecessarily complicated or straight up weird, but I hope this was as a good
 showcase of the different ways optional parameters can be approached in Rust,
 and that reading this served as a learning experience. I look forward to seeing
 new crates in the future that help make some of the approaches easier to
 implement.
 
 The code for the different approaches can be found [here](). Bear in mind that
-there's a lot of different ways to implement the approaches, though.
+there are a lot of different ways to implement the approaches, as I explained
+in this post. You can discuss about it at the [reddit thread]().
 
 This was one of my first blog posts, so please let me know what you think about
-the writing, the structure and just your overall rating at the [reddit thread
-](). If you found any errors or things that could be improved about the Rust
-code, do let me know as well. If you're interested in more blog posts, you can
-follow us on [Twitter](https://twitter.com/glow_apps) for now.
+the writing, the structure and just your overall rating, or if you found any
+errors or things that could be improved about the Rust code.
+
+If you're interested in more blog posts, you can follow us on [Twitter
+](https://twitter.com/glow_apps) for now.
