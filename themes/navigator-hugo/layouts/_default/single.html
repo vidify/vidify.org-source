@@ -27,6 +27,10 @@
                             <span>{{ $blog.atText }}</span>
                             <span>{{ dateFormat $defaultDateFormat . }}</span>
                             {{ end }}
+                            {{ "<!-- Reading time, with support for different languages -->" | safeHTML }}
+                            {{ $preText := cond (gt .ReadingTime 1) $blog.preReadTextPlural $blog.preReadTextSingular }}
+                            {{ $postText := cond (gt .ReadingTime 1) $blog.postReadTextPlural $blog.postReadTextSingular }}
+                            <span>, {{ $preText }}{{ .ReadingTime }}{{ $postText }}</span>
                         </li>
                     </ul>
                 </div>
