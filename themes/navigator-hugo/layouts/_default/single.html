@@ -12,7 +12,7 @@
                     <i class="tf-ion-android-arrow-back"></i>
                     <span>GO BACK</span>
                 </a>
-                <h2>{{ .Title }}</h2>
+                <h2>{{ if .Params.developer }}<span class="tooltip-text-custom" data-toggle="tooltip" title="{{ $blog.devHint }}"><i class="tf-ion-code"></i></span> {{ end }}{{ .Title }}</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         {{ with .Params.description }}
@@ -27,6 +27,10 @@
                             <span>{{ $blog.atText }}</span>
                             <span>{{ dateFormat $defaultDateFormat . }}</span>
                             {{ end }}
+                            {{ "<!-- Reading time, with support for different languages -->" | safeHTML }}
+                            {{ $preText := cond (gt .ReadingTime 1) $blog.preReadTextPlural $blog.preReadTextSingular }}
+                            {{ $postText := cond (gt .ReadingTime 1) $blog.postReadTextPlural $blog.postReadTextSingular }}
+                            <span>, {{ $preText }}{{ .ReadingTime }}{{ $postText }}</span>
                         </li>
                     </ul>
                 </div>
