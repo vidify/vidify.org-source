@@ -250,8 +250,9 @@ clearly which parameters are mandatory and which aren't.
 ## E) Endpoint-oriented interface
 Here's a different take: what if the API was endpoint-oriented instead of
 client-oriented? Starting from the previous approach, we could make the call
-*inside the endpoint struct itself* instead of in the API client by overriding
-the `build` method from `derive_builder`:
+*inside the endpoint struct itself* instead of in the API's client by adding it
+to `ApproachE`, or by overriding the `build` method from `derive_builder` for
+a slightly less verbose version:
 
 ```rust
 ApproachEBuilder::default()
