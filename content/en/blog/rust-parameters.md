@@ -12,14 +12,11 @@ post it here, since this problem arose in the process of [integrating Rust
 ](https://github.com/vidify/vidify/issues/107), while improving [Rspotify
 ](https://github.com/ramsayleung/rspotify/pull/120#issuecomment-683349883).*
 
-Optional and default parameters in Rust are usually approached with the [builder
-pattern](https://doc.rust-lang.org/1.0.0/style/ownership/builders.html). This is
-a very solid approach when constructing data structures, but it's not as
-straightforward for multiple functions. Say your library has lots of endpoints
-like so:
+Optional parameters are a very interesting feature of some languages that Rust
+specifically doesn't cover. Say your library has lots of endpoints like so:
 
 ```rust
-fn endpoint<T1, T2, T3, ...>(mandatory: T1, opt1: Option<T2>, opt2: Option<T3>, ...)
+fn endpoint<T1, T2, T3, ...>(mandatory: T1, opt1: Option<T2>, opt2: Option<T3>, ...);
 ```
 
 In this case, when you call `endpoint`, you have to use `endpoint(mandatory,
@@ -27,11 +24,12 @@ None, None, ...)`, or `endpoint(mandatory, Some(val1), Some(val2), ...)`,
 instead of the more intuitive `endpoint(mandatory)` or `endpoint(mandatory,
 val1, val2)`. Other languages like Python have named arguments, which make
 optional parameters natural and easier to read: `endpoint(mandatory, opt1=val1,
-opt2=val2)`, also allowing to group up these parameters in any order.
+opt2=val2)`, also allowing them to be written in any order.
 
-There are lots of ways to approach this in Rust, which is what this blog post
-tries to analyze. My goal is not to show which one is the "best" approach, but
-to showcase how it can be done, and the ups and downs of each of them.
+Even without official support, there are are lots of different ways to approach
+them in Rust, which is what this blog post tries to analyze. My goal is not to
+show which one is the "best" option, but to exhastively showcase the different
+ways they can be approached, and the ups and downs of each of them.
 
 ## Introducing an example
 Let's start with a typical web API wrapper library. These often require a client
@@ -458,10 +456,11 @@ implement and require compilation-time overhead.
 
 ## Conclusion
 Whew! That was more lengthy than I expected. Some of these endpoints might
-be unnecessarily complicated, but hopefully this serves as a good showcase of
-the different ways optional parameters can be approached in Rust. Hopefully
-we'll see crates in the future that help make the last two hybrid approaches
-easier to implement.
+be unnecessarily complicated or weird, but hopefully this serves as a good
+showcase of the different ways optional parameters can be approached in Rust,
+and that reading this served as a learning experience. I look forward to seeing
+new crates in the future that help make some of the approaches easier to
+implement.
 
 The code for the different approaches can be found [here](). Bear in mind that
 there's a lot of different ways to implement the approaches, though.
