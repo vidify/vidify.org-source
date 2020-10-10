@@ -147,7 +147,7 @@ api.approach_c(&call1)?;
 We can even use `..Default::default()` to initialize the rest of the parameters
 with their default values:
 
-```
+```rust
 let call2 = params::ApproachC {
     name: "builder".to_string(),
     ..Default::default()
