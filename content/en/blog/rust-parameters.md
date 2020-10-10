@@ -133,10 +133,35 @@ the number of optional parameters.
 Another option is to create a struct that holds the parameters and use that
 instead. The complexity is still relatively simple, and it can work out well
 if the API has functions with repetitive function signatures. This will serve
-as a base for the following approaches as well.
+as a base for the following approaches as well:
+
+```rust
+let call1 = params::ApproachC {
+    name: "builder".to_string(),
+    opt1: Some(param2),
+    opt2: Some(123),
+};
+api.approach_c(&call1)?;
+```
+
+We can even use `..Default::default()` to initialize the rest of the parameters
+with their default values:
+
+```
+let call2 = params::ApproachC {
+    name: "builder".to_string(),
+    ..Default::default()
+};
+api.approach_c(&call2)?;
+```
+
+The implementation looks like this:
 
 ```rust
 mod params {
+    /// We derive `Default` to be able to initialize with
+    /// `..Default::default()`.
+    #[derive(Default)]
     pub struct ApproachC {
         pub name: String,
         pub opt1: Option<u32>,
@@ -149,21 +174,6 @@ impl APIClient {
         self.actual_endpoint(&data.name, data.opt1, data.opt2)
     }
 }
-```
-
-```rust
-let call1 = params::ApproachC {
-    name: "builder".to_string(),
-    opt1: Some(param2),
-    opt2: Some(123),
-};
-let call2 = params::ApproachC {
-    name: "builder".to_string(),
-    opt1: None,
-    opt2: None,
-};
-api.approach_c(&call1)?;
-api.approach_c(&call2)?;
 ```
 
 ### Upsides
@@ -479,7 +489,8 @@ and that reading this served as a learning experience. I look forward to seeing
 new crates in the future that help make some of the approaches easier to
 implement.
 
-The code for the different approaches can be found [here](). Bear in mind that
+The code for the different approaches can be found [here
+](https://github.com/marioortizmanero/rust-optional-params). Bear in mind that
 there are a lot of different ways to implement the approaches, as I explained
 in this post. You can discuss about it at the [reddit thread
 ](https://www.reddit.com/r/rust/comments/j8p6fx/optional_parameters_in_rust).
