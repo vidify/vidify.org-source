@@ -481,7 +481,8 @@ implement.
 
 The code for the different approaches can be found [here](). Bear in mind that
 there are a lot of different ways to implement the approaches, as I explained
-in this post. You can discuss about it at the [reddit thread]().
+in this post. You can discuss about it at the [reddit thread
+](https://www.reddit.com/r/rust/comments/j8p6fx/optional_parameters_in_rust).
 
 This was one of my first blog posts, so please let me know what you think about
 the writing, the structure and just your overall rating, or if you found any
