@@ -368,9 +368,8 @@ the builder always has to be initialized with `Builder::default()`. With a
 custom implementation, we could have this new method integrated in the builder
 itself instead, like `Builder::new(A, B, C)`.
 
-Thus, it might be better to use other crates like [`safe-builder`
-](https://github.com/raiden-rs/safe-builder) (WIP and basically abandoned), or
-just a custom implementation.
+Thus, it might be better to use other crates like [`typed-builder`
+](https://crates.io/crates/typed-builder), or just a custom implementation.
 
 ### Upsides
 * Although mandatory parameters don't have a parameter name now, it's still
