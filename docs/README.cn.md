@@ -9,7 +9,7 @@
 * 在 `config.yaml` 中创建一个包含 `params.langsList` 和 `languages` 的条目
 * 在 `i18n/LANG.toml` 中翻译网站的菜单
 * 在 `data/LANG/*.yaml` 中翻译网站的内容
-* 在 `content/LANG/*/*.md` 中翻译网站的某些部分
+* 翻译文件在 `content/LANG/*/*.md` 中（`content/LANG/blog/_index.md` 这个文件很重要, 不过 `content/LANG/blog/*.md` 中的其他内容是可选的）
 
 ## 构建项目
 
