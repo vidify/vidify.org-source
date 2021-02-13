@@ -4,7 +4,7 @@
 
 它是一个由 [Hugo](https://gohugo.io/) 生成的静态网页，并且基于 [Navigator Hugo theme](https://themes.gohugo.io/navigator-hugo/) 主题，你可以在 [vidify/vidify.org](https://github.com/vidify/vidify.org) 中寻找到构建文件
 
-欢迎任何的贡献！如果你想帮助这个网站翻译更多的语言，你将必须遵循现有的语言结构:
+欢迎贡献！如果你想帮助这个网站翻译更多的语言，你得遵循以下的项目结构:
 
 * 在 `config.yaml` 中创建一个包含 `params.langsList` 和 `languages` 的条目
 * 在 `i18n/LANG.toml` 中翻译网站的菜单
