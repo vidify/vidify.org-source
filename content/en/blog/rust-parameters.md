@@ -6,10 +6,8 @@ developer: true
 date: 2020-10-10
 ---
 
-*Disclaimer: although this post is not directly related to Vidify, I decided to
-post it here, since this problem arose in the process of [integrating Rust
-](https://github.com/vidify/vidify/issues/107), while improving [Rspotify
-](https://github.com/ramsayleung/rspotify/pull/120#issuecomment-683349883).*
+*Disclaimer: I will now be posting these kind of posts at my personal blog:
+https://nullderef.com/blog/rust-parameters/*
 
 Optional or default parameters are a very interesting feature of some languages
 that Rust specifically doesn't cover (and looks like it won't [anytime soon
