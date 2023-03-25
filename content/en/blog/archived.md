@@ -15,9 +15,9 @@ which helped shape my growth as a software developer.
 
 The most rewarding part, however, was collaborating so closely with the open
 source community. I was able to influence the design of new libraries, such as
-[tekore](https://github.com/felix-hilden/tekore), and improve existing ones,
-like [SwSpotify](https://github.com/SwagLyrics/SwSpotify). Vidify also received
-a ton of help from contributors, including translating it to
+[Tekore](https://github.com/felix-hilden/tekore), and improve existing ones,
+like [SwSpotify](https://github.com/SwagLyrics/SwSpotify). Moreover, Vidify
+received a ton of help from contributors, including translating it to
 [Chinese](https://github.com/vidify/vidify.org-source/pull/30) or
 [Dutch](https://github.com/vidify/vidify/issues/73), adding [new video
 players](https://github.com/vidify/vidify/pull/118), [uploading it to
@@ -25,12 +25,18 @@ Gentoo](https://github.com/vidify/vidify/pull/67), or reporting and fixing all
 sort of issues. This experience is probably what led me to eventually love open
 source work.
 
-Unfortunately, I have been neglecting Vidify for some time, mainly due to the
-important technical and directional challenges described in [this
-article](https://vidify.org/blog/202105-update/). My life has also changed
-wildly; I recently relocated to a different country to work for
+Unfortunately, I have been neglecting Vidify for some time, mainly due to
+important challenges that prevent it from scaling, as I introduced in [this
+article](https://vidify.org/blog/202105-update/). Our main dependency,
+`youtube-dl`, was [temporarily taken
+down](https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/),
+Spotify rejected API access due to [ToS
+violations](https://github.com/vidify/vidify/issues/166), among others. My life
+has also changed wildly; I recently relocated to a different country to work for
 [Lyft](https://www.lyft.com/), which has made it difficult to keep up with my
-side projects.
+side projects. While I believe a project like Vidify has potential, it would
+require a completely different approach and much greater scale, which is not
+feasible for me in the near term.
 
 The last commit on the Vidify desktop application was merged on December 2021,
 but there had already been no active development on it since the end of 2020.
