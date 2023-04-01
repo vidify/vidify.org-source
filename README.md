@@ -1,3 +1,5 @@
+## NOTE: Vidify has been archived. Read more [here](https://vidify.org/blog/archived/).
+
 # Vidify's website
 
 ##### Languages: [English](https://github.com/vidify/vidify.org-source/blob/master/README.md) | [Español](https://github.com/vidify/vidify.org-source/tree/master/docs/README.es.md) | [简体中文](https://github.com/vidify/vidify.org-source/tree/master/docs/README.cn.md)
