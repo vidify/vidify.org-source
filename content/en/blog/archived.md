@@ -1,8 +1,9 @@
 ---
-title: "The end of Vidify... For now"
-description: "Announcement of the project development end"
+title: "The End of an Open Source Journey: Archiving Vidify"
+description: "Officially announcing the end of my development on Vidify, with
+some last words about the project and what it meant to me."
 author: "Mario Ortiz Manero"
-date: 2023-03-23
+date: 2023-04-01
 ---
 
 Vidify was one of my first big software engineering projects, and I invested a
@@ -25,8 +26,8 @@ Gentoo](https://github.com/vidify/vidify/pull/67), or reporting and fixing all
 sort of issues. This experience is probably what led me to eventually love open
 source work.
 
-Unfortunately, I have been neglecting Vidify for some time because of important
-challenges that have hindered its growth, as I introduced in [this
+Unfortunately, I have been neglecting Vidify for some time because of some
+fundamental challenges, as I introduced in [this
 article](https://vidify.org/blog/202105-update/). Our main dependency,
 `youtube-dl`, was [temporarily taken
 down](https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/),
